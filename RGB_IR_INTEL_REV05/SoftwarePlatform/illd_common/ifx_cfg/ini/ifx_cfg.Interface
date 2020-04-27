@@ -1,0 +1,5 @@
+[Interface]
+Name=ifx_cfg
+Category=INTERNAL
+Description=iLLD Library Configuration
+PublicDir=$(SWP_RELPATH)/include

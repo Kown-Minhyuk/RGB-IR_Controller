@@ -1,0 +1,240 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 07918494"
+	.compiler_invocation	"ctc -f cc16280a --dep-file=SoftwarePlatform\\illd_tc23x\\src\\ifx\\SrvSw\\Tricore\\Compilers\\.CompilerGnuc.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc23x -D__CPU_TC23X__ --core=tc1.6.x --fp-model=+float -DNDEBUG -D__SWPLATFORM__ -DIFX_CFG_USE_COMPILER_DEFAULT_LINKER -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05 -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\APP\\inc -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_common/ifx_cfg/include -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/Configuration -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/Scu/Std/InitApi -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/Stm/Std/InitApi -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_tc23x/src/ifx/TC23x -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_tc23x/src/ifx/TC23x/_Reg -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_tc23x/src/ifx/SrvSw -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_common/ifx_cfg/include -g2 --no-warnings=542 --make-target=SoftwarePlatform\\illd_tc23x\\src\\ifx\\SrvSw\\Tricore\\Compilers\\CompilerGnuc.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o SoftwarePlatform\\illd_tc23x\\src\\ifx\\SrvSw\\Tricore\\Compilers\\CompilerGnuc.src ..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\SrvSw\\Tricore\\Compilers\\CompilerGnuc.c"
+	.compiler_name		"ctc"
+	;source	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\SrvSw\\Tricore\\Compilers\\CompilerGnuc.c'
+
+	
+$TC16X
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	596
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\SrvSw\\Tricore\\Compilers\\CompilerGnuc.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'short int',0,2,5,3
+	.byte	'__wchar_t',0,1,1,1
+	.word	200
+	.byte	2
+	.byte	'unsigned int',0,4,7,3
+	.byte	'__size_t',0,1,1,1
+	.word	231
+	.byte	2
+	.byte	'int',0,4,5,3
+	.byte	'__ptrdiff_t',0,1,1,1
+	.word	264
+	.byte	4,1,5
+	.word	291
+	.byte	3
+	.byte	'__codeptr',0,1,1,1
+	.word	293
+	.byte	3
+	.byte	'__intptr_t',0,1,1,1
+	.word	264
+	.byte	3
+	.byte	'__uintptr_t',0,1,1,1
+	.word	231
+	.byte	2
+	.byte	'unsigned short int',0,2,7,3
+	.byte	'_iob_flag_t',0,2,82,25
+	.word	355
+	.byte	2
+	.byte	'unsigned char',0,1,8,3
+	.byte	'uint8',0,3,89,24
+	.word	397
+	.byte	3
+	.byte	'sint16',0,3,90,24
+	.word	200
+	.byte	3
+	.byte	'uint16',0,3,91,24
+	.word	355
+	.byte	2
+	.byte	'long int',0,4,5,3
+	.byte	'sint32',0,3,92,24
+	.word	458
+	.byte	2
+	.byte	'unsigned long int',0,4,7,3
+	.byte	'uint32',0,3,93,24
+	.word	485
+	.byte	2
+	.byte	'long long int',0,8,5,3
+	.byte	'sint64',0,4,36,28
+	.word	521
+	.byte	6
+	.byte	'void',0,5
+	.word	553
+	.byte	3
+	.byte	'pvoid',0,4,40,28
+	.word	559
+	.byte	3
+	.byte	'Ifx_TickTime',0,4,43,28
+	.word	521
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,22,0,3,8,58,15,59,15,57,15
+	.byte	73,19,0,0,4,21,0,54,15,0,0,5,15,0,73,19,0,0,6,59,0,3,8,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L7-.L6
+.L6:
+	.half	3
+	.word	.L9-.L8
+.L8:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'C:\\TASKING\\TriCore v6.2r2\\ctc\\include\\',0,0
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\SrvSw\\Tricore\\Compilers\\CompilerGnuc.c',0,0,0,0
+	.byte	'stdio.h',0,1,0,0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\Cpu\\Std\\Platform_Types.h',0
+	.byte	0,0,0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\Cpu\\Std\\Ifx_Types.h',0
+	.byte	0,0,0,0
+.L9:
+.L7:
+
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	     1  /**
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	     2   * \file CompilerGnuc.c
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	     3   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	     4   * \version iLLD_1_0_0_11_0
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	     5   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	     6   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	     7   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	     8   *                                 IMPORTANT NOTICE
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	     9   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    10   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    11   * Infineon Technologies AG (Infineon) is supplying this file for use
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    12   * exclusively with Infineon's microcontroller products. This file can be freely
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    13   * distributed within development tools that are supporting such microcontroller
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    14   * products.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    15   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    16   * THIS SOFTWARE IS PROVIDED "AS IS".  NO WARRANTIES, WHETHER EXPRESS, IMPLIED
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    17   * OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    18   * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    19   * INFINEON SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL,
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    20   * OR CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    21   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    22   */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    23  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    24  #include "Cpu/Std/Ifx_Types.h"
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    25  #include "Compilers.h"
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    26  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    27  #if defined(__GNUC__) && !defined(WIN32)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    28  /*!
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    29   * \brief Data s C variables.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    30   */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    31  extern uint32 __clear_table[];  /**< clear table entry */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    32  extern uint32 __copy_table[];   /**< copy table entry */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    33  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    34  typedef volatile union
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    35  {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    36      uint8              *ucPtr;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    37      uint16             *usPtr;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    38      uint32             *uiPtr;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    39      unsigned long long *ullPtr;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    40  } IfxStart_CTablePtr;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    41  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    42  /*!
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    43   * \brief Initializes C variables.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    44   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    45   * This function is called in the startup. This function initialize the all variables in .data section
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    46   * and clears the .bss section
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    47   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    48   * Parameters: Nil
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    49   * Return: Nil
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    50   */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    51  void Ifx_C_Init(void)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    52  {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    53      IfxStart_CTablePtr pBlockDest, pBlockSrc;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    54      uint32             uiLength, uiCnt;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    55      uint32            *pTable;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    56      /* clear table */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    57      pTable = (uint32 *)&__clear_table;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    58  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    59      while (pTable)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    60      {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    61          pBlockDest.uiPtr = (uint32 *)*pTable++;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    62          uiLength         = *pTable++;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    63  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    64          /* we are finished when length == -1 */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    65          if (uiLength == 0xFFFFFFFF)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    66          {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    67              break;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    68          }
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    69  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    70          uiCnt = uiLength / 8;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    71  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    72          while (uiCnt--)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    73          {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    74              *pBlockDest.ullPtr++ = 0;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    75          }
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    76  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    77          if (uiLength & 0x4)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    78          {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    79              *pBlockDest.uiPtr++ = 0;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    80          }
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    81  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    82          if (uiLength & 0x2)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    83          {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    84              *pBlockDest.usPtr++ = 0;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    85          }
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    86  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    87          if (uiLength & 0x1)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    88          {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    89              *pBlockDest.ucPtr = 0;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    90          }
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    91      }
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    92  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    93      /* copy table */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    94      pTable = (uint32 *)&__copy_table;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    95  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    96      while (pTable)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    97      {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    98          pBlockSrc.uiPtr  = (uint32 *)*pTable++;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	    99          pBlockDest.uiPtr = (uint32 *)*pTable++;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   100          uiLength         = *pTable++;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   101  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   102          /* we are finished when length == -1 */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   103          if (uiLength == 0xFFFFFFFF)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   104          {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   105              break;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   106          }
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   107  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   108          uiCnt = uiLength / 8;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   109  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   110          while (uiCnt--)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   111          {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   112              *pBlockDest.ullPtr++ = *pBlockSrc.ullPtr++;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   113          }
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   114  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   115          if (uiLength & 0x4)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   116          {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   117              *pBlockDest.uiPtr++ = *pBlockSrc.uiPtr++;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   118          }
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   119  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   120          if (uiLength & 0x2)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   121          {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   122              *pBlockDest.usPtr++ = *pBlockSrc.usPtr++;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   123          }
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   124  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   125          if (uiLength & 0x1)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   126          {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   127              *pBlockDest.ucPtr = *pBlockSrc.ucPtr;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   128          }
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   129      }
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   130  }
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   131  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   132  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\Tricore\Compilers\CompilerGnuc.c	   133  #endif
+
+	; Module end

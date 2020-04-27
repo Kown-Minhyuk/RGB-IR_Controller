@@ -1,0 +1,282 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 07918494"
+	.compiler_invocation	"ctc -f cc20172a --dep-file=SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Lib\\DataHandling\\.Ifx_CircularBuffer.asm.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc23x -D__CPU_TC23X__ --core=tc1.6.x --fp-model=+float -DNDEBUG -D__SWPLATFORM__ -DIFX_CFG_USE_COMPILER_DEFAULT_LINKER -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05 -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\APP\\inc -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_common/ifx_cfg/include -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/Configuration -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/Scu/Std/InitApi -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/Stm/Std/InitApi -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_tc23x/src/ifx/TC23x -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_tc23x/src/ifx/TC23x/_Reg -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_tc23x/src/ifx/SrvSw -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_common/ifx_cfg/include -g2 --no-warnings=542 --make-target=SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Lib\\DataHandling\\Ifx_CircularBuffer.asm.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Lib\\DataHandling\\Ifx_CircularBuffer.asm.src ..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Lib\\DataHandling\\Ifx_CircularBuffer.asm.c"
+	.compiler_name		"ctc"
+	;source	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Lib\\DataHandling\\Ifx_CircularBuffer.asm.c'
+
+	
+$TC16X
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	777
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Lib\\DataHandling\\Ifx_CircularBuffer.asm.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'unsigned long long int',0,8,7,3
+	.byte	'void',0,4
+	.word	236
+	.byte	5
+	.byte	'__ld64',0,3,1,110,19
+	.word	210
+	.byte	1,1,6
+	.byte	'addr',0,1,110,32
+	.word	242
+	.byte	7,0,8
+	.byte	'__st64',0,3,1,118,17,1,1,6
+	.byte	'addr',0,1,118,30
+	.word	242
+	.byte	6
+	.byte	'value',0,1,118,43
+	.word	210
+	.byte	7,0,9
+	.word	247
+	.byte	10
+	.word	265
+	.byte	7,0,9
+	.word	280
+	.byte	10
+	.word	294
+	.byte	10
+	.word	307
+	.byte	7,0,2
+	.byte	'short int',0,2,5,11
+	.byte	'__wchar_t',0,2,1,1
+	.word	352
+	.byte	2
+	.byte	'unsigned int',0,4,7,11
+	.byte	'__size_t',0,2,1,1
+	.word	383
+	.byte	2
+	.byte	'int',0,4,5,11
+	.byte	'__ptrdiff_t',0,2,1,1
+	.word	416
+	.byte	12,1,4
+	.word	443
+	.byte	11
+	.byte	'__codeptr',0,2,1,1
+	.word	445
+	.byte	11
+	.byte	'__intptr_t',0,2,1,1
+	.word	416
+	.byte	11
+	.byte	'__uintptr_t',0,2,1,1
+	.word	383
+	.byte	2
+	.byte	'unsigned short int',0,2,7,11
+	.byte	'_iob_flag_t',0,3,82,25
+	.word	507
+	.byte	2
+	.byte	'unsigned char',0,1,8,11
+	.byte	'uint8',0,4,89,24
+	.word	549
+	.byte	11
+	.byte	'sint16',0,4,90,24
+	.word	352
+	.byte	11
+	.byte	'uint16',0,4,91,24
+	.word	507
+	.byte	2
+	.byte	'long int',0,4,5,11
+	.byte	'sint32',0,4,92,24
+	.word	610
+	.byte	2
+	.byte	'unsigned long int',0,4,7,11
+	.byte	'uint32',0,4,93,24
+	.word	637
+	.byte	2
+	.byte	'float',0,4,4,11
+	.byte	'float32',0,4,94,24
+	.word	673
+	.byte	2
+	.byte	'long long int',0,8,5,11
+	.byte	'sint64',0,5,36,28
+	.word	698
+	.byte	11
+	.byte	'uint64',0,5,37,28
+	.word	210
+	.byte	11
+	.byte	'pvoid',0,5,40,28
+	.word	242
+	.byte	11
+	.byte	'Ifx_TickTime',0,5,43,28
+	.word	698
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,59,0,3,8,0,0,4,15,0,73,19,0
+	.byte	0,5,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,6,5,0,3,8,58,15,59,15,57,15,73,19,0,0,7,11
+	.byte	0,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,54,15,39,12,0,0,9,46,1,49,19,0,0,10,5,0,49,19,0,0,11,22,0,3,8
+	.byte	58,15,59,15,57,15,73,19,0,0,12,21,0,54,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L7-.L6
+.L6:
+	.half	3
+	.word	.L9-.L8
+.L8:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'C:\\TASKING\\TriCore v6.2r2\\ctc\\include\\',0,0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\Cpu\\Std\\IfxCpu_Intrinsics.h',0
+	.byte	0,0,0
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Lib\\DataHandling\\Ifx_CircularBuffer.asm.c',0,0
+	.byte	0,0
+	.byte	'stdio.h',0,1,0,0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\Cpu\\Std\\Platform_Types.h',0
+	.byte	0,0,0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\Cpu\\Std\\Ifx_Types.h',0
+	.byte	0,0,0,0
+.L9:
+.L7:
+
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	     1  /**
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	     2   * \file Ifx_CircularBuffer.asm.c
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	     3   * \brief Circular buffer functions (assembler implementation).
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	     4   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	     5   * \version iLLD_1_0_0_11_0
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	     6   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	     7   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	     8   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	     9   *                                 IMPORTANT NOTICE
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    10   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    11   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    12   * Infineon Technologies AG (Infineon) is supplying this file for use
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    13   * exclusively with Infineon's microcontroller products. This file can be freely
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    14   * distributed within development tools that are supporting such microcontroller
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    15   * products.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    16   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    17   * THIS SOFTWARE IS PROVIDED "AS IS".  NO WARRANTIES, WHETHER EXPRESS, IMPLIED
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    18   * OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    19   * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    20   * INFINEON SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL,
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    21   * OR CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    22   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    23   */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    24  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    25  #include "Ifx_CircularBuffer.h"
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    26  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    27  #if !(IFX_CFG_CIRCULARBUFFER_C)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    28  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    29  uint32 Ifx_CircularBuffer_get32(Ifx_CircularBuffer *buffer)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    30  {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    31      uint32 data;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    32  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    33      __asm("	ld.da\ta14/a15,[%1]\n"      /* Get circular buffer state */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    34          "	ld.w\t%0,[a14/a15+c]\n"     /* Get the value from the buffer, and increment the buffer pointer */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    35          "	st.da\t[%1],a14/a15\n"      /* Store the new circular buffer state */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    36          : "=d" (data) : "a" (buffer) : "a14", "a15");
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    37  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    38      return data;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    39  }
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    40  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    41  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    42  uint16 Ifx_CircularBuffer_get16(Ifx_CircularBuffer *buffer)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    43  {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    44      Ifx_SizeT data;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    45  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    46      __asm("	ld.da\ta14/a15,[%1]\n"      /* Get circular buffer state */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    47          "	ld.h\t%0,[a14/a15+c]\n"     /* Get the value from the buffer, and increment the buffer pointer */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    48          "	st.da\t[%1],a14/a15\n"      /* Store the new circular buffer state */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    49          : "=d" (data) : "a" (buffer) : "a14", "a15");
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    50  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    51      return data;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    52  }
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    53  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    54  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    55  /** \brief Add a 32 bit value to the circular buffer, and post-increment the circular buffer pointer
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    56   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    57   * \param buffer Specifies circular buffer.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    58   * \param data Specifies value to be added to the buffer.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    59   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    60   * \return None.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    61   */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    62  void Ifx_CircularBuffer_addDataIncr(Ifx_CircularBuffer *buffer, uint32 data)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    63  {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    64      __asm("	ld.da\ta14/a15,[%0]\n"      /* Get circular buffer state */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    65          "	st.w\t[a14/a15+c]0,%1\n"    /* Store the value to the buffer, and increment the buffer pointer */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    66          "	ld.w\t%1,[a14/a15+c]\n"     /* Read the value from the buffer, to get the buffer pointer incremented (bug workaround) */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    67          "	st.da\t[%0],a14/a15\n"      /* Store the new circular buffer state */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    68          :
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    69          : "a" (buffer), "d" (data) : "a14", "a15");
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    70  }
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    71  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    72  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    73  void *Ifx_CircularBuffer_read8(Ifx_CircularBuffer *buffer, void *data, Ifx_SizeT count)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    74  {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    75      count--;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    76      __asm("	mov.a\ta13,%3\n"                                   /* Get count value */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    77          "	ld.da\ta14/a15,[%1]\n"                             /* Get circular buffer state */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    78          "Ifx_CircularBuffer_read1:" "	ld.b\td15,[a14/a15+c]\n"/* read the value from the buffer, and increment the buffer pointer */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    79          "	st.b\t[%2+],d15\n"                                 /* Store value to the data buffer, and increment the pointer */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    80          "	loop\ta13,Ifx_CircularBuffer_read1\n"              /* loop */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    81          "	mov.d\t%0,a15\n"                                   /* Get the new index value */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    82          "	extr.u\t%0,%0,#0,#16\n": "=d" (buffer->index) : "a" (buffer), "a" (data), "d" (count) : "a13", "a14", "a15",
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    83          "d15");
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    84  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    85      return data;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    86  }
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    87  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    88  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    89  void *Ifx_CircularBuffer_read32(Ifx_CircularBuffer *buffer, void *data, Ifx_SizeT count)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    90  {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    91      count--;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    92      __asm("	mov.a\ta13,%3\n"                                   /* Get count value */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    93          "	ld.da\ta14/a15,[%1]\n"                             /* Get circular buffer state */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    94          "Ifx_CircularBuffer_read2:" "	ld.w\td15,[a14/a15+c]\n"/* read the value from the buffer, and increment the buffer pointer */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    95          "	st.w\t[%2+],d15\n"                                 /* Store value to the data buffer, and increment the pointer */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    96          "	loop\ta13,Ifx_CircularBuffer_read2\n"              /* loop */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    97          "	mov.d\t%0,a15\n"                                   /* Get the new index value */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    98          "	extr.u\t%0,%0,#0,#16\n": "=d" (buffer->index) : "a" (buffer), "a" (data), "d" (count) : "a13", "a14", "a15",
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	    99          "d15");
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   100  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   101      return data;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   102  }
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   103  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   104  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   105  const void *Ifx_CircularBuffer_write8(Ifx_CircularBuffer *buffer, const void *data, Ifx_SizeT count)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   106  {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   107      count--;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   108      __asm("	mov.a\ta13,%3\n"                              /* Get count value */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   109          "	ld.da\ta14/a15,[%1]\n"                        /* Get circular buffer state */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   110          "Ifx_CircularBuffer_write1:" "	ld.b\td15,[%2+]\n"/* Get value from the data buffer, and increment the pointer */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   111          "	st.b\t[a14/a15+c]0,d15\n"                     /* Store the value to the buffer, and increment the buffer pointer */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   112          "	ld.b\td15,[a14/a15+c]\n"                      /* Read the value from the buffer, to get the buffer pointer incremented (bug workaround) */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   113          "	loop\ta13,Ifx_CircularBuffer_write1\n"        /* loop */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   114          "	mov.d\t%0,a15\n"                              /* Get the new index value */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   115          "	extr.u\t%0,%0,#0,#16\n": "=d" (buffer->index) : "a" (buffer), "a" (data), "d" (count) : "a13", "a14", "a15",
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   116          "d15");
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   117  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   118      return data;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   119  }
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   120  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   121  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   122  const void *Ifx_CircularBuffer_write32(Ifx_CircularBuffer *buffer, const void *data, Ifx_SizeT count)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   123  {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   124      count--;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   125      __asm("	mov.a\ta13,%3\n"                              /* Get count value */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   126          "	ld.da\ta14/a15,[%1]\n"                        /* Get circular buffer state */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   127          "Ifx_CircularBuffer_write2:" "	ld.w\td15,[%2+]\n"/* Get value from the data buffer, and increment the pointer */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   128          "	st.w\t[a14/a15+c]0,d15\n"                     /* Store the value to the buffer, and increment the buffer pointer */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   129          "	ld.w\td15,[a14/a15+c]\n"                      /* Read the value from the buffer, to get the buffer pointer incremented (bug workaround) */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   130          "	loop\ta13,Ifx_CircularBuffer_write2\n"        /* loop */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   131          "	mov.d\t%0,a15\n"                              /* Get the new index value */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   132          "	extr.u\t%0,%0,#0,#16\n": "=d" (buffer->index) : "a" (buffer), "a" (data), "d" (count) : "a13", "a14", "a15",
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   133          "d15");
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   134  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   135      return data;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   136  }
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   137  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   138  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\DataHandling\Ifx_CircularBuffer.asm.c	   139  #endif
+
+	; Module end

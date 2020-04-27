@@ -1,0 +1,5 @@
+[Interface]
+Name=aurix_illd
+Category=SERVICE
+Description=IFX Low Level Drivers access library for AURIX devices
+System=true

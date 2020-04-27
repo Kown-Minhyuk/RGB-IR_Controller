@@ -1,0 +1,195 @@
+<v1:pinSettings xmlns:v1="http://www.tasking.com/schema/pinsettings/v1.1">
+  <v1:pinMappingsRef version="1.12" file="platform:/plugin/com.tasking.pinmapper.input.aurix/etc/TC23xA_pinmappings.xml"/>
+  <v1:deviceSetting id="tc23xa" pattern="TC233* A">
+    <v1:packageSetting id="tqfp100"/>
+  </v1:deviceSetting>
+  <v1:configSetting configurationId="scu.hwcfg4.bind" altId="scu.hwcfg4.bind.hwcfg4">
+    <v1:connectionSetting altId="p10_5.in.bind.in"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="porst_n.in.bind" altId="porst_n.in.bind.in">
+    <v1:connectionSetting altId="scu.porst.bind.porst"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="p14_3.in.bind" altId="p14_3.in.bind.in">
+    <v1:connectionSetting altId="scu.hwcfg3.bind.hwcfg3"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="scu.hwcfg5.bind" altId="scu.hwcfg5.bind.hwcfg5">
+    <v1:connectionSetting altId="p10_6.in.bind.in"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="evr1v.en.bind" altId="evr1v.en.bind.en">
+    <v1:connectionSetting altId="p14_2.in.bind.in"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="evr1v.mode.bind" altId="evr1v.mode.bind.mode">
+    <v1:connectionSetting altId="p14_6.in.bind.in"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="p14_2.in.bind" altId="p14_2.in.bind.in">
+    <v1:connectionSetting altId="evr1v.en.bind.en"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="scu.hwcfg3.bind" altId="scu.hwcfg3.bind.hwcfg3">
+    <v1:connectionSetting altId="p14_3.in.bind.in"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="p14_6.in.bind" altId="p14_6.in.bind.in">
+    <v1:connectionSetting altId="evr1v.mode.bind.mode"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="p10_6.in.bind" altId="p10_6.in.bind.in">
+    <v1:connectionSetting altId="scu.hwcfg5.bind.hwcfg5"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="p10_5.in.bind" altId="p10_5.in.bind.in">
+    <v1:connectionSetting altId="scu.hwcfg4.bind.hwcfg4"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="scu.porst.bind" altId="scu.porst.bind.porst">
+    <v1:connectionSetting altId="porst_n.in.bind.in"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="p11_6.dir" altId="p11_6.dir.out"/>
+  <v1:configSetting configurationId="p11_9.out.bind" altId="p11_9.out.bind.alt3">
+    <v1:connectionSetting altId="qspi1_m.txd.bind.out"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="qspi1_m.txd.bind" altId="qspi1_m.txd.bind.out">
+    <v1:connectionSetting altId="p11_9.out.bind.alt3"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="p11_6.out.bind" altId="p11_6.out.bind.alt3">
+    <v1:connectionSetting altId="qspi1_m.clk.bind.clk"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="p11_3.in.bind" altId="p11_3.in.bind.in">
+    <v1:connectionSetting altId="qspi1_m.rxdn.bind.rxd1"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="p11_10.dir" altId="p11_10.dir.out"/>
+  <v1:configSetting configurationId="p11_10.out.bind" altId="p11_10.out.bind.alt4">
+    <v1:connectionSetting altId="qspi1_m.sel3.bind.sel3"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="qspi1_m.sel3.bind" altId="qspi1_m.sel3.bind.sel3">
+    <v1:connectionSetting altId="p11_10.out.bind.alt4"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="p11_9.dir" altId="p11_9.dir.out"/>
+  <v1:configSetting configurationId="qspi1_m.clk.bind" altId="qspi1_m.clk.bind.clk">
+    <v1:connectionSetting altId="p11_6.out.bind.alt3"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="qspi1_m.rxdn.bind" altId="qspi1_m.rxdn.bind.rxd1">
+    <v1:connectionSetting altId="p11_3.in.bind.in"/>
+  </v1:configSetting>
+  <v1:propertySetting propertyId="p11_6.symbolicname" value="QSPI1_M_CLK"/>
+  <v1:propertySetting propertyId="p11_3.symbolicname" value="QSPI1_M_RXD(N)"/>
+  <v1:propertySetting propertyId="p11_10.symbolicname" value="QSPI1_M_SEL3"/>
+  <v1:propertySetting propertyId="p11_9.symbolicname" value="QSPI1_M_TXD"/>
+  <v1:configSetting configurationId="p13_3.dir" altId="p13_3.dir.out"/>
+  <v1:configSetting configurationId="p33_5.out.bind" altId="p33_5.out.bind.gpio"/>
+  <v1:configSetting configurationId="p13_1.dir" altId="p13_1.dir.out"/>
+  <v1:configSetting configurationId="p20_8.in.bind" altId="p20_8.in.bind.gpio"/>
+  <v1:configSetting configurationId="p20_8.in.mode" altId="p20_8.in.mode.pd"/>
+  <v1:configSetting configurationId="p13_2.dir" altId="p13_2.dir.out"/>
+  <v1:configSetting configurationId="p33_7.dir" altId="p33_7.dir.out"/>
+  <v1:configSetting configurationId="p33_10.in.mode" altId="p33_10.in.mode.pd"/>
+  <v1:configSetting configurationId="p00_0.out.bind" altId="p00_0.out.bind.gpio"/>
+  <v1:configSetting configurationId="p21_6.in.mode" altId="p21_6.in.mode.pd"/>
+  <v1:configSetting configurationId="p21_6.in.bind" altId="p21_6.in.bind.gpio"/>
+  <v1:configSetting configurationId="p13_3.out.bind" altId="p13_3.out.bind.gpio"/>
+  <v1:configSetting configurationId="p33_6.out.bind" altId="p33_6.out.bind.gpio"/>
+  <v1:configSetting configurationId="p33_8.dir" altId="p33_8.dir.out"/>
+  <v1:configSetting configurationId="p13_0.out.bind" altId="p13_0.out.bind.gpio"/>
+  <v1:configSetting configurationId="p13_0.dir" altId="p13_0.dir.out"/>
+  <v1:configSetting configurationId="p13_2.out.bind" altId="p13_2.out.bind.gpio"/>
+  <v1:configSetting configurationId="p33_5.dir" altId="p33_5.dir.out"/>
+  <v1:configSetting configurationId="p33_8.out.bind" altId="p33_8.out.bind.gpio"/>
+  <v1:configSetting configurationId="p00_0.dir" altId="p00_0.dir.out"/>
+  <v1:configSetting configurationId="p13_0.in.mode" altId="p13_0.in.mode.ts"/>
+  <v1:configSetting configurationId="p33_6.dir" altId="p33_6.dir.out"/>
+  <v1:configSetting configurationId="p13_1.out.bind" altId="p13_1.out.bind.gpio"/>
+  <v1:configSetting configurationId="p33_10.in.bind" altId="p33_10.in.bind.gpio"/>
+  <v1:configSetting configurationId="p33_7.out.bind" altId="p33_7.out.bind.gpio"/>
+  <v1:propertySetting propertyId="p21_6.comment" value="SUSPWRDNACK"/>
+  <v1:propertySetting propertyId="p13_1.symbolicname" value="MCU_DCDC_EN_3"/>
+  <v1:propertySetting propertyId="p20_8.comment" value="PMIC_PLTSTAT_B"/>
+  <v1:propertySetting propertyId="p13_2.symbolicname" value="MCU_DCDC_EN_4"/>
+  <v1:propertySetting propertyId="p21_6.symbolicname" value="SOC_PMIC_MCU_SUSPWRDNACK"/>
+  <v1:propertySetting propertyId="p13_3.symbolicname" value="MCU_SOC_PWERBTN"/>
+  <v1:propertySetting propertyId="p33_7.symbolicname" value="MCU_SOC_PMIC_POWER_ON"/>
+  <v1:propertySetting propertyId="p33_6.symbolicname" value="MCU_DCDC_EN"/>
+  <v1:propertySetting propertyId="p33_8.symbolicname" value="MCU_SOC_RESET"/>
+  <v1:propertySetting propertyId="p20_8.symbolicname" value="SOC_PMIC_MCU_STARTBOOT"/>
+  <v1:propertySetting propertyId="p00_0.symbolicname" value="GPIO1"/>
+  <v1:propertySetting propertyId="p13_0.symbolicname" value="MCU_DCDC_EN_2"/>
+  <v1:propertySetting propertyId="p33_5.symbolicname" value="MCU_5VCAP_FET_EN"/>
+  <v1:propertySetting propertyId="p33_5.comment" value="5V CAP FET Enable"/>
+  <v1:propertySetting propertyId="p33_10.symbolicname" value="SOC_MCU_RSMRST_B"/>
+  <v1:propertySetting propertyId="p33_10.comment" value="RSMRST_B"/>
+  <v1:configSetting configurationId="p15_0.out.bind" altId="p15_0.out.bind.gpio"/>
+  <v1:configSetting configurationId="p21_4.dir" altId="p21_4.dir.out"/>
+  <v1:configSetting configurationId="p21_4.out.bind" altId="p21_4.out.bind.gpio"/>
+  <v1:configSetting configurationId="p15_0.dir" altId="p15_0.dir.out"/>
+  <v1:propertySetting propertyId="p21_4.symbolicname" value="GPIO2"/>
+  <v1:propertySetting propertyId="p15_0.symbolicname" value="GPIO3"/>
+  <v1:configSetting configurationId="p02_5.in.mode" altId="p02_5.in.mode.pd"/>
+  <v1:configSetting configurationId="p02_5.in.bind" altId="p02_5.in.bind.gpio"/>
+  <v1:configSetting configurationId="p02_4.in.mode" altId="p02_4.in.mode.pd"/>
+  <v1:configSetting configurationId="p02_4.in.bind" altId="p02_4.in.bind.gpio"/>
+  <v1:propertySetting propertyId="p02_5.symbolicname" value="GPIO5"/>
+  <v1:propertySetting propertyId="p02_4.symbolicname" value="GPIO4"/>
+  <v1:configSetting configurationId="p11_8.in.mode" altId="p11_8.in.mode.pd"/>
+  <v1:configSetting configurationId="p02_6.dir" altId="p02_6.dir.out"/>
+  <v1:configSetting configurationId="p14_0.dir" altId="p14_0.dir.out"/>
+  <v1:configSetting configurationId="p14_1.in.bind" altId="p14_1.in.bind.in">
+    <v1:connectionSetting altId="can0_node1.rxd.bind.rxd1"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="p02_7.in.mode" altId="p02_7.in.mode.pd"/>
+  <v1:configSetting configurationId="p14_0.out.bind" altId="p14_0.out.bind.alt5">
+    <v1:connectionSetting altId="can0_node1.txd.bind.out"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="p02_7.in.bind" altId="p02_7.in.bind.gpio"/>
+  <v1:configSetting configurationId="can0_node1.txd.bind" altId="can0_node1.txd.bind.out">
+    <v1:connectionSetting altId="p14_0.out.bind.alt5"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="can0_node1.rxd.bind" altId="can0_node1.rxd.bind.rxd1">
+    <v1:connectionSetting altId="p14_1.in.bind.in"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="p14_4.out.bind" altId="p14_4.out.bind.gpio"/>
+  <v1:configSetting configurationId="p11_8.in.bind" altId="p11_8.in.bind.gpio"/>
+  <v1:configSetting configurationId="p02_6.out.bind" altId="p02_6.out.bind.gpio"/>
+  <v1:configSetting configurationId="p14_4.dir" altId="p14_4.dir.out"/>
+  <v1:propertySetting propertyId="p14_1.symbolicname" value="CAN0_NODE1_RXD"/>
+  <v1:propertySetting propertyId="p14_4.symbolicname" value="GPIO6"/>
+  <v1:propertySetting propertyId="p14_0.symbolicname" value="CAN0_NODE1_TXD"/>
+  <v1:propertySetting propertyId="p11_8.symbolicname" value="GPIO9"/>
+  <v1:propertySetting propertyId="p02_6.symbolicname" value="GPIO7"/>
+  <v1:propertySetting propertyId="p02_7.symbolicname" value="GPIO8"/>
+  <v1:configSetting configurationId="g1_chscan.gate.bind" altId="g1_chscan.gate.bind.none"/>
+  <v1:configSetting configurationId="p41_0.function" altId="p41_0.function.analog"/>
+  <v1:configSetting configurationId="p41_1.function" altId="p41_1.function.analog"/>
+  <v1:configSetting configurationId="p41_0.an.bind" altId="p41_0.an.bind.anares">
+    <v1:connectionSetting altId="g1_chscan.ch0.bind.ch0"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="g1_chscan.ch1.bind" altId="g1_chscan.ch1.bind.ch1">
+    <v1:connectionSetting altId="p41_1.an.bind.anares"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="g1_chscan.ch0.bind" altId="g1_chscan.ch0.bind.ch0">
+    <v1:connectionSetting altId="p41_0.an.bind.anares"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="g1_chscan.trigin.bind" altId="g1_chscan.trigin.bind.none"/>
+  <v1:configSetting configurationId="p41_1.an.bind" altId="p41_1.an.bind.anares">
+    <v1:connectionSetting altId="g1_chscan.ch1.bind.ch1"/>
+  </v1:configSetting>
+  <v1:propertySetting propertyId="p41_0.symbolicname" value="G1_CHSCAN_CH0"/>
+  <v1:propertySetting propertyId="p41_1.symbolicname" value="G1_CHSCAN_CH1"/>
+  <v1:configSetting configurationId="p15_5.in.bind" altId="p15_5.in.bind.gpio"/>
+  <v1:configSetting configurationId="p15_5.in.mode" altId="p15_5.in.mode.pu"/>
+  <v1:propertySetting propertyId="p15_5.symbolicname" value="GPIO10"/>
+  <v1:configSetting configurationId="scu.esr1.bind" altId="scu.esr1.bind.esr1_in">
+    <v1:connectionSetting altId="scu_esr1_n.in.bind.in"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="scu.esr0.bind" altId="scu.esr0.bind.esr0_in">
+    <v1:connectionSetting altId="scu_esr0_n.in.bind.in"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="scu_esr1_n.in.bind" altId="scu_esr1_n.in.bind.in">
+    <v1:connectionSetting altId="scu.esr1.bind.esr1_in"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="scu_esr0_n.in.bind" altId="scu_esr0_n.in.bind.in">
+    <v1:connectionSetting altId="scu.esr0.bind.esr0_in"/>
+  </v1:configSetting>
+  <v1:configSetting configurationId="scu_esr0_n.dir" altId="scu_esr0_n.dir.in"/>
+  <v1:propertySetting propertyId="scu_esr1_n.symbolicname" value="SCU_ESR1"/>
+  <v1:propertySetting propertyId="scu_esr0_n.symbolicname" value="SCU_ESR0"/>
+  <v1:configSetting configurationId="p11_11.out.bind" altId="p11_11.out.bind.gpio"/>
+  <v1:configSetting configurationId="p11_11.dir" altId="p11_11.dir.out"/>
+  <v1:propertySetting propertyId="p11_11.symbolicname" value="GPIO11"/>
+  <v1:configSetting configurationId="p11_12.out.bind" altId="p11_12.out.bind.gpio"/>
+  <v1:configSetting configurationId="p11_12.dir" altId="p11_12.dir.out"/>
+  <v1:propertySetting propertyId="p11_12.symbolicname" value="GPIO12"/>
+</v1:pinSettings>

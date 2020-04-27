@@ -1,0 +1,47 @@
+[Available_If0]
+Kind=ENVIRONMENT
+Name=DEVICE
+Value=TC27XC
+Condition=REQ
+
+[Plugin]
+Name=IfxGtmTom_TC27XC
+Implement=IfxGtmTom
+NameSpacePrefix=IfxGtm
+
+Caption=Gtm Tom Peripheral
+Description=Gtm Tom Peripheral
+UserTypeHeaderFile=Gtm/Std/IfxGtm.h
+
+; instances
+
+Instance0=IFX_GTM0_TOM0
+Instance1=IFX_GTM0_TOM1
+Instance2=IFX_GTM0_TOM2
+
+[Instance]
+; field needed to make sure section is not empty
+Require0=
+
+[Instance_Option0]
+Name=Module
+Caption=Module Instance
+Description=GTM Module Instance
+Type=Ifx_GTM*
+Kind=ENUM
+
+EnumValue0=&MODULE_GTM
+EnumValue1=&MODULE_GTM
+EnumValue2=&MODULE_GTM
+Enum0=GTM_TOM0
+Enum1=GTM_TOM1
+Enum2=GTM_TOM2
+Instance0_DefaultValue=GTM_TOM0
+Instance1_DefaultValue=GTM_TOM1
+Instance2_DefaultValue=GTM_TOM2
+; no code generation, this option value is used from the driver plugin
+NoGenerate=true
+
+; always hide module option
+[Instance_Option0_Hide_If0]
+Kind=True

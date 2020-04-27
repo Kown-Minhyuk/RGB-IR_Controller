@@ -1,0 +1,160 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 07918494"
+	.compiler_invocation	"ctc -f cc23740a --dep-file=SoftwarePlatform\\illd_common\\ifx_cfg\\src\\.ifx_cfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc23x -D__CPU_TC23X__ --core=tc1.6.x --fp-model=+float -DNDEBUG -D__SWPLATFORM__ -DIFX_CFG_USE_COMPILER_DEFAULT_LINKER -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05 -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\APP\\inc -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_common/ifx_cfg/include -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/Configuration -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/Scu/Std/InitApi -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/Stm/Std/InitApi -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_tc23x/src/ifx/TC23x -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_tc23x/src/ifx/TC23x/_Reg -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_tc23x/src/ifx/SrvSw -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_common/ifx_cfg/include -g2 --no-warnings=542 --make-target=SoftwarePlatform\\illd_common\\ifx_cfg\\src\\ifx_cfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o SoftwarePlatform\\illd_common\\ifx_cfg\\src\\ifx_cfg.src ..\\SoftwarePlatform\\illd_common\\ifx_cfg\\src\\ifx_cfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\SoftwarePlatform\\illd_common\\ifx_cfg\\src\\ifx_cfg.c'
+
+	
+$TC16X
+	
+	.sdecl	'.zrodata.ifx_cfg..1.str',data,rom
+	.sect	'.zrodata.ifx_cfg..1.str'
+.1.str:	.type	object
+	.size	.1.str,4
+	.byte	79,70,70
+	.space	1
+	.sdecl	'.zrodata.ifx_cfg..2.str',data,rom
+	.sect	'.zrodata.ifx_cfg..2.str'
+.2.str:	.type	object
+	.size	.2.str,8
+	.byte	70,65,73,76
+	.byte	85,82,69
+	.space	1
+	.sdecl	'.zrodata.ifx_cfg..3.str',data,rom
+	.sect	'.zrodata.ifx_cfg..3.str'
+.3.str:	.type	object
+	.size	.3.str,6
+	.byte	69,82,82,79
+	.byte	82
+	.space	1
+	.sdecl	'.zrodata.ifx_cfg..4.str',data,rom
+	.sect	'.zrodata.ifx_cfg..4.str'
+.4.str:	.type	object
+	.size	.4.str,8
+	.byte	87,65,82,78
+	.byte	73,78,71
+	.space	1
+	.sdecl	'.zrodata.ifx_cfg..5.str',data,rom
+	.sect	'.zrodata.ifx_cfg..5.str'
+.5.str:	.type	object
+	.size	.5.str,5
+	.byte	73,78,70,79
+	.space	1
+	.sdecl	'.zrodata.ifx_cfg..6.str',data,rom
+	.sect	'.zrodata.ifx_cfg..6.str'
+.6.str:	.type	object
+	.size	.6.str,6
+	.byte	68,69,66,85
+	.byte	71
+	.space	1
+	.sdecl	'.data.ifx_cfg.verboseLevelStr',data,cluster('verboseLevelStr')
+	.sect	'.data.ifx_cfg.verboseLevelStr'
+	.global	verboseLevelStr
+	.align	4
+verboseLevelStr:	.type	object
+	.size	verboseLevelStr,24
+	.word	.1.str,.2.str,.3.str,.4.str
+	.word	.5.str,.6.str
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	355
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\SoftwarePlatform\\illd_common\\ifx_cfg\\src\\ifx_cfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'short int',0,2,5,3
+	.byte	'__wchar_t',0,1,1,1
+	.word	176
+	.byte	2
+	.byte	'unsigned int',0,4,7,3
+	.byte	'__size_t',0,1,1,1
+	.word	207
+	.byte	2
+	.byte	'int',0,4,5,3
+	.byte	'__ptrdiff_t',0,1,1,1
+	.word	240
+	.byte	4,1,5
+	.word	267
+	.byte	3
+	.byte	'__codeptr',0,1,1,1
+	.word	269
+	.byte	3
+	.byte	'__intptr_t',0,1,1,1
+	.word	240
+	.byte	3
+	.byte	'__uintptr_t',0,1,1,1
+	.word	207
+	.byte	2
+	.byte	'char',0,1,6,6
+	.word	331
+	.byte	5
+	.word	339
+.L8:
+	.byte	7,24
+	.word	344
+	.byte	8,5,0,0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,22,0,3,8,58,15,59,15,57,15
+	.byte	73,19,0,0,4,21,0,54,15,0,0,5,15,0,73,19,0,0,6,38,0,73,19,0,0,7,1,1,11,15,73,19,0,0,8,33,0,47,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L10-.L9
+.L9:
+	.half	3
+	.word	.L12-.L11
+.L11:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\SoftwarePlatform\\illd_common\\ifx_cfg\\src\\ifx_cfg.c',0,0,0,0,0
+.L12:
+.L10:
+	.sdecl	'.debug_info',debug,cluster('verboseLevelStr')
+	.sect	'.debug_info'
+.L6:
+	.word	205
+	.half	3
+	.word	.L7
+	.byte	4,1
+	.byte	'..\\SoftwarePlatform\\illd_common\\ifx_cfg\\src\\ifx_cfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'verboseLevelStr',0,1,7,13
+	.word	.L8
+	.byte	1,5,3
+	.word	verboseLevelStr
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('verboseLevelStr')
+	.sect	'.debug_abbrev'
+.L7:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+
+; ..\SoftwarePlatform\illd_common\ifx_cfg\src\ifx_cfg.c	     1  
+; ..\SoftwarePlatform\illd_common\ifx_cfg\src\ifx_cfg.c	     2  #include <aurix_illd_cfg.h>
+; ..\SoftwarePlatform\illd_common\ifx_cfg\src\ifx_cfg.c	     3  
+; ..\SoftwarePlatform\illd_common\ifx_cfg\src\ifx_cfg.c	     4  #if (AURIX_ILLD_IFX_ASSERT != 0)
+; ..\SoftwarePlatform\illd_common\ifx_cfg\src\ifx_cfg.c	     5      
+; ..\SoftwarePlatform\illd_common\ifx_cfg\src\ifx_cfg.c	     6      //! this global array is used by IFX_ASSERT of iLLDs
+; ..\SoftwarePlatform\illd_common\ifx_cfg\src\ifx_cfg.c	     7  const char* verboseLevelStr[6] = {
+; ..\SoftwarePlatform\illd_common\ifx_cfg\src\ifx_cfg.c	     8      "OFF",
+; ..\SoftwarePlatform\illd_common\ifx_cfg\src\ifx_cfg.c	     9      "FAILURE",
+; ..\SoftwarePlatform\illd_common\ifx_cfg\src\ifx_cfg.c	    10      "ERROR",
+; ..\SoftwarePlatform\illd_common\ifx_cfg\src\ifx_cfg.c	    11      "WARNING",
+; ..\SoftwarePlatform\illd_common\ifx_cfg\src\ifx_cfg.c	    12      "INFO",
+; ..\SoftwarePlatform\illd_common\ifx_cfg\src\ifx_cfg.c	    13      "DEBUG"
+; ..\SoftwarePlatform\illd_common\ifx_cfg\src\ifx_cfg.c	    14  };
+; ..\SoftwarePlatform\illd_common\ifx_cfg\src\ifx_cfg.c	    15  
+; ..\SoftwarePlatform\illd_common\ifx_cfg\src\ifx_cfg.c	    16  #endif /* (AURIX_ILLD_IFX_ASSERT != 0) */
+
+	; Module end

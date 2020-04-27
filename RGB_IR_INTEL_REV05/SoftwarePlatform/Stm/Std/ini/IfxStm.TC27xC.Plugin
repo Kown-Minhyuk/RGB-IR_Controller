@@ -1,0 +1,566 @@
+;                                IMPORTANT NOTICE
+;
+; Infineon Technologies AG (Infineon) is supplying this file for use
+; exclusively with Infineon's microcontroller products. This file can be freely
+; distributed within development tools that are supporting such microcontroller
+; products.
+;
+; THIS SOFTWARE IS PROVIDED "AS IS".  NO WARRANTIES, WHETHER EXPRESS, IMPLIED
+; OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF
+; MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE.
+; INFINEON SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL,
+; OR CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER.
+
+
+[Available_If0]
+Kind=ENVIRONMENT
+Name=DEVICE
+Value=TC27XC
+Condition=REQ
+
+[Plugin]
+Name=IfxStm_TC27XC
+Implement=IfxStm
+NameSpacePrefix=IfxStm
+
+Caption=Stm Peripheral
+Description=Stm Peripheral
+
+
+GenerateInclude0=IfxStm_ActInit.h
+SourceFile0=$(SWP_RELPATH)/InitApi/IfxStm_ActInit.c
+GeneratePeripheralInstanceMacros=true
+
+; instances
+
+Instance0=IFX_STM0
+Instance1=IFX_STM1
+Instance2=IFX_STM2
+
+[Instance]
+; field needed to make sure section is not empty
+Require0=
+
+[Instance_Option0]
+Name=Module
+Caption=Module Instance
+Description=STM Module Instance
+Type=Ifx_STM*
+Kind=ENUM
+
+EnumValue0=&MODULE_STM0
+EnumValue1=&MODULE_STM1
+EnumValue2=&MODULE_STM2
+Enum0=STM0
+Enum1=STM1
+Enum2=STM2
+Instance0_DefaultValue=STM0
+Instance1_DefaultValue=STM1
+Instance2_DefaultValue=STM2
+
+; always hide module option
+[Instance_Option0_Hide_If0]
+Kind=True
+
+;----------------------------------------------------------------------------------------
+[Instance_Option1]
+Name=numComparators
+Caption=num Comparators
+Type=uint32
+
+Kind=ENUM
+EnumValue0=1
+EnumValue1=2
+Enum0=1
+Enum1=2
+DefaultValue=1
+
+;----------------------------------------------------------------------------------------
+; Instance options are used to fill in struct IfxStm_CompareConfig and its substructures
+;----------------------------------------------------------------------------------------
+;typedef struct
+;{
+;    IfxStm_Comparator              comparator;
+;    IfxStm_ComparatorInterrupt     comparatorInterrupt;
+;    IfxStm_ComparatorOffset        compareOffset;
+;    IfxStm_ComparatorSize          compareSize;
+;    uint32                         ticks;
+;    Ifx_Priority                   triggerPriority;
+;    IfxSrc_Tos                     typeOfService;
+;} IfxStm_CompareConfig;
+
+[Instance_Option2]
+Name=CompareConfig0
+Caption=Compare Config
+Description=Comparator Configuration Structure
+Type=IfxStm_CompareConfig
+Kind=STRUCT
+
+;----------------------------------------------------------------------------------------
+;IfxStm_Comparator    comparator;
+[Instance_Option3]
+Name=CompareConfig0.comparator
+Caption=comparator
+Description=Comparator Id defined in   MODULE_STMx.ISCR.B.CMP0IRR(x = 0, 1, 2).
+Type=IfxStm_Comparator
+Kind=ENUM
+EnumValue0=IfxStm_Comparator_0
+EnumValue1=IfxStm_Comparator_1
+Enum0=0
+Enum1=1
+DefaultValue=0
+
+;----------------------------------------------------------------------------------------
+;IfxStm_ComparatorInterrupt    comparatorInterrupt;
+[Instance_Option4]
+Name=CompareConfig0.comparatorInterrupt
+Caption=comparator Interrupt
+Description=Comparator Interrupt request source defined in MODULE_SRC.STM.STM[index].SRx (x =0, 1).
+Type=IfxStm_ComparatorInterrupt
+Kind=ENUM
+EnumValue0=IfxStm_ComparatorInterrupt_ir0
+EnumValue1=IfxStm_ComparatorInterrupt_ir1
+Enum0=ir0
+Enum1=ir1
+DefaultValue=ir0
+
+;----------------------------------------------------------------------------------------
+;IfxStm_ComparatorOffset    compareOffset;
+[Instance_Option5]
+Name=CompareConfig0.compareOffset
+Caption=compare Offset
+Description=Comparator start bit position  defined in MODULE_STMx.CMCON.B.MSTART0(x = 0,1,2).
+Type=IfxStm_ComparatorOffset
+Kind=ENUM
+EnumValue0=IfxStm_ComparatorOffset_0
+EnumValue1=IfxStm_ComparatorOffset_1
+EnumValue2=IfxStm_ComparatorOffset_2
+EnumValue3=IfxStm_ComparatorOffset_3
+EnumValue4=IfxStm_ComparatorOffset_4
+EnumValue5=IfxStm_ComparatorOffset_5
+EnumValue6=IfxStm_ComparatorOffset_6
+EnumValue7=IfxStm_ComparatorOffset_7
+EnumValue8=IfxStm_ComparatorOffset_8
+EnumValue9=IfxStm_ComparatorOffset_9
+EnumValue10=IfxStm_ComparatorOffset_10
+EnumValue11=IfxStm_ComparatorOffset_11
+EnumValue12=IfxStm_ComparatorOffset_12
+EnumValue13=IfxStm_ComparatorOffset_13
+EnumValue14=IfxStm_ComparatorOffset_14
+EnumValue15=IfxStm_ComparatorOffset_15
+EnumValue16=IfxStm_ComparatorOffset_16
+EnumValue17=IfxStm_ComparatorOffset_17
+EnumValue18=IfxStm_ComparatorOffset_18
+EnumValue19=IfxStm_ComparatorOffset_19
+EnumValue20=IfxStm_ComparatorOffset_20
+EnumValue21=IfxStm_ComparatorOffset_21
+EnumValue22=IfxStm_ComparatorOffset_22
+EnumValue23=IfxStm_ComparatorOffset_23
+EnumValue24=IfxStm_ComparatorOffset_24
+EnumValue25=IfxStm_ComparatorOffset_25
+EnumValue26=IfxStm_ComparatorOffset_26
+EnumValue27=IfxStm_ComparatorOffset_27
+EnumValue28=IfxStm_ComparatorOffset_28
+EnumValue29=IfxStm_ComparatorOffset_29
+EnumValue30=IfxStm_ComparatorOffset_30
+EnumValue31=IfxStm_ComparatorOffset_31
+Enum0=0
+Enum1=1
+Enum2=2
+Enum3=3
+Enum4=4
+Enum5=5
+Enum6=6
+Enum7=7
+Enum8=8
+Enum9=9
+Enum10=10
+Enum11=11
+Enum12=12
+Enum13=13
+Enum14=14
+Enum15=15
+Enum16=16
+Enum17=17
+Enum18=18
+Enum19=19
+Enum20=20
+Enum21=21
+Enum22=22
+Enum23=23
+Enum24=24
+Enum25=25
+Enum26=26
+Enum27=27
+Enum28=28
+Enum29=29
+Enum30=30
+Enum31=31
+DefaultValue=0
+
+;----------------------------------------------------------------------------------------
+;IfxStm_ComparatorSize    compareSize;
+[Instance_Option6]
+Name=CompareConfig0.compareSize
+Caption=compare Size
+Description=Size of compare value to compare with timer defined in  MODULE_STMx.CMCON.B.MSIZE0(x = 0,1,2).
+Type=IfxStm_ComparatorSize
+Kind=ENUM
+EnumValue0=IfxStm_ComparatorSize_1Bit
+EnumValue1=IfxStm_ComparatorSize_2Bits
+EnumValue2=IfxStm_ComparatorSize_3Bits
+EnumValue3=IfxStm_ComparatorSize_4Bits
+EnumValue4=IfxStm_ComparatorSize_5Bits
+EnumValue5=IfxStm_ComparatorSize_6Bits
+EnumValue6=IfxStm_ComparatorSize_7Bits
+EnumValue7=IfxStm_ComparatorSize_8Bits
+EnumValue8=IfxStm_ComparatorSize_9Bits
+EnumValue9=IfxStm_ComparatorSize_10Bits
+EnumValue10=IfxStm_ComparatorSize_11Bits
+EnumValue11=IfxStm_ComparatorSize_12Bits
+EnumValue12=IfxStm_ComparatorSize_13Bits
+EnumValue13=IfxStm_ComparatorSize_14Bits
+EnumValue14=IfxStm_ComparatorSize_15Bits
+EnumValue15=IfxStm_ComparatorSize_16Bits
+EnumValue16=IfxStm_ComparatorSize_17Bits
+EnumValue17=IfxStm_ComparatorSize_18Bits
+EnumValue18=IfxStm_ComparatorSize_19Bits
+EnumValue19=IfxStm_ComparatorSize_20Bits
+EnumValue20=IfxStm_ComparatorSize_21Bits
+EnumValue21=IfxStm_ComparatorSize_22Bits
+EnumValue22=IfxStm_ComparatorSize_23Bits
+EnumValue23=IfxStm_ComparatorSize_24Bits
+EnumValue24=IfxStm_ComparatorSize_25Bits
+EnumValue25=IfxStm_ComparatorSize_26Bits
+EnumValue26=IfxStm_ComparatorSize_27Bits
+EnumValue27=IfxStm_ComparatorSize_28Bits
+EnumValue28=IfxStm_ComparatorSize_29Bits
+EnumValue29=IfxStm_ComparatorSize_30Bits
+EnumValue30=IfxStm_ComparatorSize_31Bits
+EnumValue31=IfxStm_ComparatorSize_32Bits
+Enum0=1Bit
+Enum1=2Bits
+Enum2=3Bits
+Enum3=4Bits
+Enum4=5Bits
+Enum5=6Bits
+Enum6=7Bits
+Enum7=8Bits
+Enum8=9Bits
+Enum9=10Bits
+Enum10=11Bits
+Enum11=12Bits
+Enum12=13Bits
+Enum13=14Bits
+Enum14=15Bits
+Enum15=16Bits
+Enum16=17Bits
+Enum17=18Bits
+Enum18=19Bits
+Enum19=20Bits
+Enum20=21Bits
+Enum21=22Bits
+Enum22=23Bits
+Enum23=24Bits
+Enum24=25Bits
+Enum25=26Bits
+Enum26=27Bits
+Enum27=28Bits
+Enum28=29Bits
+Enum29=30Bits
+Enum30=31Bits
+Enum31=32Bits
+DefaultValue=32Bits
+
+;----------------------------------------------------------------------------------------
+;uint32    ticks;
+[Instance_Option7]
+Name=CompareConfig0.ticks
+Caption=ticks
+Description=count for next comparison from current timer count.
+Type=uint32
+Kind=UINT32
+DefaultValue=0xFFFFFFFF
+
+;----------------------------------------------------------------------------------------
+;Ifx_Priority    triggerPriority;
+[Instance_Option8]
+Name=CompareConfig0.triggerPriority
+Caption=trigger Priority
+Description=Interrupt priority. Range = 0 .. 255. 0 = interrupt is disabled.
+Type=Ifx_Priority
+Kind=UINT16
+DefaultValue=0
+
+;----------------------------------------------------------------------------------------
+;IfxSrc_Tos    typeOfService;
+[Instance_Option9]
+Name=CompareConfig0.typeOfService
+Caption=type Of Service
+Description=Type of service.
+Type=IfxSrc_Tos
+
+Kind=ENUM
+EnumValue0=0
+EnumValue1=1
+EnumValue2=2
+EnumValue3=3
+Enum0=cpu0
+Enum1=cpu1
+Enum2=cpu2
+Enum3=dma
+DefaultValue=cpu0
+
+
+[Instance_Option2_Hide_If0] 
+Name=numComparators
+Kind=Option
+Value=1
+Condition=LT
+
+
+;----------------------------------------------------------------------------------------
+; Instance options are used to fill in struct IfxStm_CompareConfig and its substructures
+;----------------------------------------------------------------------------------------
+;typedef struct
+;{
+;    IfxStm_Comparator              comparator;
+;    IfxStm_ComparatorInterrupt     comparatorInterrupt;
+;    IfxStm_ComparatorOffset        compareOffset;
+;    IfxStm_ComparatorSize          compareSize;
+;    uint32                         ticks;
+;    Ifx_Priority                   triggerPriority;
+;    IfxSrc_Tos                     typeOfService;
+;} IfxStm_CompareConfig;
+
+[Instance_Option10]
+Name=CompareConfig1
+Caption=Compare Config
+Description=Comparator Configuration Structure
+Type=IfxStm_CompareConfig
+Kind=STRUCT
+
+;----------------------------------------------------------------------------------------
+;IfxStm_Comparator    comparator;
+[Instance_Option11]
+Name=CompareConfig1.comparator
+Caption=comparator
+Description=Comparator Id defined in   MODULE_STMx.ISCR.B.CMP0IRR(x = 0, 1, 2).
+Type=IfxStm_Comparator
+Kind=ENUM
+EnumValue0=IfxStm_Comparator_0
+EnumValue1=IfxStm_Comparator_1
+Enum0=0
+Enum1=1
+DefaultValue=0
+
+;----------------------------------------------------------------------------------------
+;IfxStm_ComparatorInterrupt    comparatorInterrupt;
+[Instance_Option12]
+Name=CompareConfig1.comparatorInterrupt
+Caption=comparator Interrupt
+Description=Comparator Interrupt request source defined in MODULE_SRC.STM.STM[index].SRx (x =0, 1).
+Type=IfxStm_ComparatorInterrupt
+Kind=ENUM
+EnumValue0=IfxStm_ComparatorInterrupt_ir0
+EnumValue1=IfxStm_ComparatorInterrupt_ir1
+Enum0=ir0
+Enum1=ir1
+DefaultValue=ir0
+
+;----------------------------------------------------------------------------------------
+;IfxStm_ComparatorOffset    compareOffset;
+[Instance_Option13]
+Name=CompareConfig1.compareOffset
+Caption=compare Offset
+Description=Comparator start bit position  defined in MODULE_STMx.CMCON.B.MSTART0(x = 0,1,2).
+Type=IfxStm_ComparatorOffset
+Kind=ENUM
+EnumValue0=IfxStm_ComparatorOffset_0
+EnumValue1=IfxStm_ComparatorOffset_1
+EnumValue2=IfxStm_ComparatorOffset_2
+EnumValue3=IfxStm_ComparatorOffset_3
+EnumValue4=IfxStm_ComparatorOffset_4
+EnumValue5=IfxStm_ComparatorOffset_5
+EnumValue6=IfxStm_ComparatorOffset_6
+EnumValue7=IfxStm_ComparatorOffset_7
+EnumValue8=IfxStm_ComparatorOffset_8
+EnumValue9=IfxStm_ComparatorOffset_9
+EnumValue10=IfxStm_ComparatorOffset_10
+EnumValue11=IfxStm_ComparatorOffset_11
+EnumValue12=IfxStm_ComparatorOffset_12
+EnumValue13=IfxStm_ComparatorOffset_13
+EnumValue14=IfxStm_ComparatorOffset_14
+EnumValue15=IfxStm_ComparatorOffset_15
+EnumValue16=IfxStm_ComparatorOffset_16
+EnumValue17=IfxStm_ComparatorOffset_17
+EnumValue18=IfxStm_ComparatorOffset_18
+EnumValue19=IfxStm_ComparatorOffset_19
+EnumValue20=IfxStm_ComparatorOffset_20
+EnumValue21=IfxStm_ComparatorOffset_21
+EnumValue22=IfxStm_ComparatorOffset_22
+EnumValue23=IfxStm_ComparatorOffset_23
+EnumValue24=IfxStm_ComparatorOffset_24
+EnumValue25=IfxStm_ComparatorOffset_25
+EnumValue26=IfxStm_ComparatorOffset_26
+EnumValue27=IfxStm_ComparatorOffset_27
+EnumValue28=IfxStm_ComparatorOffset_28
+EnumValue29=IfxStm_ComparatorOffset_29
+EnumValue30=IfxStm_ComparatorOffset_30
+EnumValue31=IfxStm_ComparatorOffset_31
+Enum0=0
+Enum1=1
+Enum2=2
+Enum3=3
+Enum4=4
+Enum5=5
+Enum6=6
+Enum7=7
+Enum8=8
+Enum9=9
+Enum10=10
+Enum11=11
+Enum12=12
+Enum13=13
+Enum14=14
+Enum15=15
+Enum16=16
+Enum17=17
+Enum18=18
+Enum19=19
+Enum20=20
+Enum21=21
+Enum22=22
+Enum23=23
+Enum24=24
+Enum25=25
+Enum26=26
+Enum27=27
+Enum28=28
+Enum29=29
+Enum30=30
+Enum31=31
+DefaultValue=0
+
+;----------------------------------------------------------------------------------------
+;IfxStm_ComparatorSize    compareSize;
+[Instance_Option14]
+Name=CompareConfig1.compareSize
+Caption=compare Size
+Description=Size of compare value to compare with timer defined in  MODULE_STMx.CMCON.B.MSIZE0(x = 0,1,2).
+Type=IfxStm_ComparatorSize
+Kind=ENUM
+EnumValue0=IfxStm_ComparatorSize_1Bit
+EnumValue1=IfxStm_ComparatorSize_2Bits
+EnumValue2=IfxStm_ComparatorSize_3Bits
+EnumValue3=IfxStm_ComparatorSize_4Bits
+EnumValue4=IfxStm_ComparatorSize_5Bits
+EnumValue5=IfxStm_ComparatorSize_6Bits
+EnumValue6=IfxStm_ComparatorSize_7Bits
+EnumValue7=IfxStm_ComparatorSize_8Bits
+EnumValue8=IfxStm_ComparatorSize_9Bits
+EnumValue9=IfxStm_ComparatorSize_10Bits
+EnumValue10=IfxStm_ComparatorSize_11Bits
+EnumValue11=IfxStm_ComparatorSize_12Bits
+EnumValue12=IfxStm_ComparatorSize_13Bits
+EnumValue13=IfxStm_ComparatorSize_14Bits
+EnumValue14=IfxStm_ComparatorSize_15Bits
+EnumValue15=IfxStm_ComparatorSize_16Bits
+EnumValue16=IfxStm_ComparatorSize_17Bits
+EnumValue17=IfxStm_ComparatorSize_18Bits
+EnumValue18=IfxStm_ComparatorSize_19Bits
+EnumValue19=IfxStm_ComparatorSize_20Bits
+EnumValue20=IfxStm_ComparatorSize_21Bits
+EnumValue21=IfxStm_ComparatorSize_22Bits
+EnumValue22=IfxStm_ComparatorSize_23Bits
+EnumValue23=IfxStm_ComparatorSize_24Bits
+EnumValue24=IfxStm_ComparatorSize_25Bits
+EnumValue25=IfxStm_ComparatorSize_26Bits
+EnumValue26=IfxStm_ComparatorSize_27Bits
+EnumValue27=IfxStm_ComparatorSize_28Bits
+EnumValue28=IfxStm_ComparatorSize_29Bits
+EnumValue29=IfxStm_ComparatorSize_30Bits
+EnumValue30=IfxStm_ComparatorSize_31Bits
+EnumValue31=IfxStm_ComparatorSize_32Bits
+Enum0=1Bit
+Enum1=2Bits
+Enum2=3Bits
+Enum3=4Bits
+Enum4=5Bits
+Enum5=6Bits
+Enum6=7Bits
+Enum7=8Bits
+Enum8=9Bits
+Enum9=10Bits
+Enum10=11Bits
+Enum11=12Bits
+Enum12=13Bits
+Enum13=14Bits
+Enum14=15Bits
+Enum15=16Bits
+Enum16=17Bits
+Enum17=18Bits
+Enum18=19Bits
+Enum19=20Bits
+Enum20=21Bits
+Enum21=22Bits
+Enum22=23Bits
+Enum23=24Bits
+Enum24=25Bits
+Enum25=26Bits
+Enum26=27Bits
+Enum27=28Bits
+Enum28=29Bits
+Enum29=30Bits
+Enum30=31Bits
+Enum31=32Bits
+DefaultValue=32Bits
+
+;----------------------------------------------------------------------------------------
+;uint32    ticks;
+[Instance_Option15]
+Name=CompareConfig1.ticks
+Caption=ticks
+Description=count for next comparison from current timer count.
+Type=uint32
+Kind=UINT32
+DefaultValue=0xFFFFFFFF
+
+;----------------------------------------------------------------------------------------
+;Ifx_Priority    triggerPriority;
+[Instance_Option16]
+Name=CompareConfig1.triggerPriority
+Caption=trigger Priority
+Description=Interrupt priority. Range = 0 .. 255. 0 = interrupt is disabled.
+Type=Ifx_Priority
+Kind=UINT16
+DefaultValue=0
+
+;----------------------------------------------------------------------------------------
+;IfxSrc_Tos    typeOfService;
+[Instance_Option17]
+Name=CompareConfig1.typeOfService
+Caption=type Of Service
+Description=Type of service.
+Type=IfxSrc_Tos
+
+Kind=ENUM
+EnumValue0=0
+EnumValue1=1
+EnumValue2=2
+EnumValue3=3
+Enum0=cpu0
+Enum1=cpu1
+Enum2=cpu2
+Enum3=dma
+DefaultValue=cpu0
+
+
+[Instance_Option10_Hide_If0] 
+Name=numComparators
+Kind=Option
+Value=2
+Condition=LT
+
+
+

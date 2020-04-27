@@ -1,0 +1,663 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 07918494"
+	.compiler_invocation	"ctc -f cc23712a --dep-file=SoftwarePlatform\\illd_tc23x\\src\\ifx\\SrvSw\\StdIf\\.IfxStdIf_Pos.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc23x -D__CPU_TC23X__ --core=tc1.6.x --fp-model=+float -DNDEBUG -D__SWPLATFORM__ -DIFX_CFG_USE_COMPILER_DEFAULT_LINKER -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05 -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\APP\\inc -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_common/ifx_cfg/include -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/Configuration -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/Scu/Std/InitApi -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/Stm/Std/InitApi -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_tc23x/src/ifx/TC23x -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_tc23x/src/ifx/TC23x/_Reg -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_tc23x/src/ifx/SrvSw -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_common/ifx_cfg/include -g2 --no-warnings=542 --make-target=SoftwarePlatform\\illd_tc23x\\src\\ifx\\SrvSw\\StdIf\\IfxStdIf_Pos.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o SoftwarePlatform\\illd_tc23x\\src\\ifx\\SrvSw\\StdIf\\IfxStdIf_Pos.src ..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\SrvSw\\StdIf\\IfxStdIf_Pos.c"
+	.compiler_name		"ctc"
+	;source	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\SrvSw\\StdIf\\IfxStdIf_Pos.c'
+
+	
+$TC16X
+	.sdecl	'.zrodata.IfxStdIf_Pos..1.cnt',data,rom
+	.sect	'.zrodata.IfxStdIf_Pos..1.cnt'
+	.align	2
+.1.cnt:	.type	object
+	.size	.1.cnt,4
+	.word	981668463
+	.sdecl	'.zrodata.IfxStdIf_Pos..2.cnt',data,rom
+	.sect	'.zrodata.IfxStdIf_Pos..2.cnt'
+	.align	2
+.2.cnt:	.type	object
+	.size	.2.cnt,4
+	.word	1157817939
+	
+	.sdecl	'.text.IfxStdIf_Pos.IfxStdIf_Pos_initConfig',code,cluster('IfxStdIf_Pos_initConfig')
+	.sect	'.text.IfxStdIf_Pos.IfxStdIf_Pos_initConfig'
+	.align	2
+	
+	.global	IfxStdIf_Pos_initConfig
+
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	     1  /**
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	     2   * \file IfxStdIf_Pos.c
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	     3   * \brief Standard interface: Position interface
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	     4   * \ingroup IfxStdIf
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	     5   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	     6   * \version iLLD_1_0_0_11_0
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	     7   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	     8   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	     9   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    10   *                                 IMPORTANT NOTICE
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    11   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    12   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    13   * Infineon Technologies AG (Infineon) is supplying this file for use
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    14   * exclusively with Infineon's microcontroller products. This file can be freely
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    15   * distributed within development tools that are supporting such microcontroller
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    16   * products.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    17   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    18   * THIS SOFTWARE IS PROVIDED "AS IS".  NO WARRANTIES, WHETHER EXPRESS, IMPLIED
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    19   * OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    20   * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    21   * INFINEON SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL,
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    22   * OR CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    23   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    24   */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    25  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    26  #include "IfxStdIf_Pos.h"
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    27  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    28  void IfxStdIf_Pos_initConfig (IfxStdIf_Pos_Config * config)
+; Function IfxStdIf_Pos_initConfig
+.L3:
+IfxStdIf_Pos_initConfig:	.type	func
+
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    29  {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    30      config->offset = 0;
+	mov	d0,#0
+	st.w	[a4],d0
+.L24:
+
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    31      config->reversed = FALSE;
+	st.b	[a4]4,d0
+.L25:
+
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    32      config->resolution = 0;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    33      config->periodPerRotation = 1;
+	mov	d15,#1
+	st.w	[a4]6,d0
+.L26:
+	st.h	[a4]10,d15
+.L27:
+
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    34      config->resolutionFactor = IfxStdIf_Pos_ResolutionFactor_oneFold;
+	st.b	[a4]12,d15
+.L28:
+
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    35      config->updatePeriod = 0.001;
+	lea	a15,[a4]14
+.L29:
+	ld.w	d15,.1.cnt
+.L30:
+	st.w	[a15+],d15
+.L31:
+
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    36      config->speedModeThreshold = 0;
+	st.w	[a15+],d0
+.L32:
+
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    37      config->minSpeed = 0;       // 0 rpm
+	st.w	[a15+],d0
+.L33:
+
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    38      config->maxSpeed = 20000.0 / 60.0 * (2 * IFX_PI);   // 20000 rpm
+	ld.w	d15,.2.cnt
+.L34:
+	st.w	[a4]26,d15
+.L35:
+
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    39      config->speedFilterEnabled = FALSE;
+	st.b	[a4]30,d0
+.L36:
+
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    40      config->speedFilerCutOffFrequency = 0;
+	st.w	[a4]32,d0
+.L37:
+
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    41  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\SrvSw\StdIf\IfxStdIf_Pos.c	    42  }
+	ret
+.L13:
+	
+__IfxStdIf_Pos_initConfig_function_end:
+	.size	IfxStdIf_Pos_initConfig,__IfxStdIf_Pos_initConfig_function_end-IfxStdIf_Pos_initConfig
+.L12:
+	; End of function
+	
+	.calls	'IfxStdIf_Pos_initConfig','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L5:
+	.word	3225
+	.half	3
+	.word	.L6
+	.byte	4
+.L4:
+	.byte	1
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\SrvSw\\StdIf\\IfxStdIf_Pos.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\Debug\\',0,12,1
+	.word	.L7
+	.byte	2
+	.byte	'unsigned long int',0,4,7,2
+	.byte	'unsigned char',0,1,8,3,1,85,5,1,4
+	.byte	'notSynchronised',0,1
+	.word	209
+	.byte	1,7,2,35,0,4
+	.byte	'signalLoss',0,1
+	.word	209
+	.byte	1,6,2,35,0,4
+	.byte	'signalDegradation',0,1
+	.word	209
+	.byte	1,5,2,35,0,4
+	.byte	'trackingLoss',0,1
+	.word	209
+	.byte	1,4,2,35,0,4
+	.byte	'commError',0,1
+	.word	209
+	.byte	1,3,2,35,0,0,5,1,82,9,4,6
+	.byte	'status',0
+	.word	188
+	.byte	4,2,35,0,6
+	.byte	'B',0
+	.word	226
+	.byte	1,2,35,0,0,7
+	.byte	'void',0,8
+	.word	388
+	.byte	9
+	.byte	'IfxStdIf_InterfaceDriver',0,2,97,15
+	.word	394
+	.byte	10,1,1,11
+	.word	394
+	.byte	0,8
+	.word	432
+	.byte	9
+	.byte	'IfxStdIf_Pos_OnZeroIrq',0,1,114,16
+	.word	441
+	.byte	2
+	.byte	'float',0,4,4,12
+	.word	477
+	.byte	1,1,11
+	.word	394
+	.byte	0,8
+	.word	486
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetAbsolutePosition',0,1,108,19
+	.word	499
+	.byte	2
+	.byte	'long int',0,4,5,12
+	.word	545
+	.byte	1,1,11
+	.word	394
+	.byte	0,8
+	.word	557
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetOffset',0,1,121,18
+	.word	570
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetPosition',0,1,131,1,19
+	.word	499
+	.byte	13,1,74,9,1,14
+	.byte	'IfxStdIf_Pos_Dir_forward',0,0,14
+	.byte	'IfxStdIf_Pos_Dir_backward',0,1,14
+	.byte	'IfxStdIf_Pos_Dir_unknown',0,2,0,12
+	.word	640
+	.byte	1,1,11
+	.word	394
+	.byte	0,8
+	.word	728
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetDirection',0,1,140,1,28
+	.word	741
+	.byte	12
+	.word	355
+	.byte	1,1,11
+	.word	394
+	.byte	0,8
+	.word	781
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetFault',0,1,147,1,31
+	.word	794
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetRawPosition',0,1,163,1,18
+	.word	570
+	.byte	2
+	.byte	'unsigned short int',0,2,7,12
+	.word	867
+	.byte	1,1,11
+	.word	394
+	.byte	0,8
+	.word	889
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetPeriodPerRotation',0,1,154,1,18
+	.word	902
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetRefreshPeriod',0,1,169,1,19
+	.word	499
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetResolution',0,1,175,1,18
+	.word	570
+	.byte	13,1,63,9,1,14
+	.byte	'IfxStdIf_Pos_SensorType_encoder',0,0,14
+	.byte	'IfxStdIf_Pos_SensorType_hall',0,1,14
+	.byte	'IfxStdIf_Pos_SensorType_resolver',0,2,14
+	.byte	'IfxStdIf_Pos_SensorType_angletrk',0,3,14
+	.byte	'IfxStdIf_Pos_SensorType_igmr',0,4,14
+	.byte	'IfxStdIf_Pos_SensorType_virtual',0,5,0,12
+	.word	1025
+	.byte	1,1,11
+	.word	394
+	.byte	0,8
+	.word	1231
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetSensorType',0,1,181,1,35
+	.word	1244
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetTurn',0,1,193,1,18
+	.word	570
+	.byte	9
+	.byte	'IfxStdIf_Pos_Reset',0,1,211,1,16
+	.word	441
+	.byte	9
+	.byte	'IfxStdIf_Pos_ResetFaults',0,1,220,1,16
+	.word	441
+	.byte	9
+	.byte	'IfxStdIf_Pos_GetSpeed',0,1,187,1,19
+	.word	499
+	.byte	9
+	.byte	'IfxStdIf_Pos_Update',0,1,202,1,16
+	.word	441
+	.byte	10,1,1,11
+	.word	394
+	.byte	11
+	.word	545
+	.byte	0,8
+	.word	1437
+	.byte	9
+	.byte	'IfxStdIf_Pos_SetOffset',0,1,227,1,16
+	.word	1451
+	.byte	10,1,1,11
+	.word	394
+	.byte	11
+	.word	477
+	.byte	0,8
+	.word	1488
+	.byte	9
+	.byte	'IfxStdIf_Pos_SetPosition',0,1,234,1,16
+	.word	1502
+	.byte	9
+	.byte	'IfxStdIf_Pos_SetRawPosition',0,1,240,1,16
+	.word	1451
+	.byte	9
+	.byte	'IfxStdIf_Pos_SetSpeed',0,1,247,1,16
+	.word	1502
+	.byte	9
+	.byte	'IfxStdIf_Pos_SetRefreshPeriod',0,1,254,1,16
+	.word	1502
+	.byte	15
+	.byte	'IfxStdIf_Pos_',0,1,130,2,8,88,6
+	.byte	'driver',0
+	.word	399
+	.byte	4,2,35,0,6
+	.byte	'onZeroIrq',0
+	.word	446
+	.byte	4,2,35,4,6
+	.byte	'getAbsolutePosition',0
+	.word	504
+	.byte	4,2,35,8,6
+	.byte	'getOffset',0
+	.word	575
+	.byte	4,2,35,12,6
+	.byte	'getPosition',0
+	.word	606
+	.byte	4,2,35,16,6
+	.byte	'getDirection',0
+	.word	746
+	.byte	4,2,35,20,6
+	.byte	'getFault',0
+	.word	799
+	.byte	4,2,35,24,6
+	.byte	'getRawPosition',0
+	.word	830
+	.byte	4,2,35,28,6
+	.byte	'getPeriodPerRotation',0
+	.word	907
+	.byte	4,2,35,32,6
+	.byte	'getRefreshPeriod',0
+	.word	950
+	.byte	4,2,35,36,6
+	.byte	'getResolution',0
+	.word	989
+	.byte	4,2,35,40,6
+	.byte	'getSensorType',0
+	.word	1249
+	.byte	4,2,35,44,6
+	.byte	'getTurn',0
+	.word	1285
+	.byte	4,2,35,48,6
+	.byte	'reset',0
+	.word	1315
+	.byte	4,2,35,52,6
+	.byte	'resetFaults',0
+	.word	1343
+	.byte	4,2,35,56,6
+	.byte	'getSpeed',0
+	.word	1377
+	.byte	4,2,35,60,6
+	.byte	'update',0
+	.word	1408
+	.byte	4,2,35,64,6
+	.byte	'setOffset',0
+	.word	1456
+	.byte	4,2,35,68,6
+	.byte	'setPosition',0
+	.word	1507
+	.byte	4,2,35,72,6
+	.byte	'setRawPosition',0
+	.word	1541
+	.byte	4,2,35,76,6
+	.byte	'setSpeed',0
+	.word	1578
+	.byte	4,2,35,80,6
+	.byte	'setRefreshPeriod',0
+	.word	1609
+	.byte	4,2,35,84,0,8
+	.word	1648
+	.byte	16
+	.byte	'IfxStdIf_Pos_getFault',0,3,1,191,2,32
+	.word	355
+	.byte	1,1,17
+	.byte	'stdIf',0,1,191,2,68
+	.word	2134
+	.byte	18,0,8
+	.word	388
+	.byte	8
+	.word	432
+	.byte	8
+	.word	486
+	.byte	8
+	.word	557
+	.byte	8
+	.word	486
+	.byte	8
+	.word	728
+	.byte	8
+	.word	781
+	.byte	8
+	.word	557
+	.byte	8
+	.word	889
+	.byte	8
+	.word	486
+	.byte	8
+	.word	557
+	.byte	8
+	.word	1231
+	.byte	8
+	.word	557
+	.byte	8
+	.word	432
+	.byte	8
+	.word	432
+	.byte	8
+	.word	486
+	.byte	8
+	.word	432
+	.byte	8
+	.word	1437
+	.byte	8
+	.word	1488
+	.byte	8
+	.word	1437
+	.byte	8
+	.word	1488
+	.byte	8
+	.word	1488
+	.byte	19
+	.word	2139
+	.byte	20
+	.word	2173
+	.byte	18,0,13,1,55,9,1,14
+	.byte	'IfxStdIf_Pos_ResolutionFactor_oneFold',0,1,14
+	.byte	'IfxStdIf_Pos_ResolutionFactor_twoFold',0,2,14
+	.byte	'IfxStdIf_Pos_ResolutionFactor_fourFold',0,4,0,3,1,157,2,9,36,6
+	.byte	'offset',0
+	.word	545
+	.byte	4,2,35,0,6
+	.byte	'reversed',0
+	.word	209
+	.byte	1,2,35,4,6
+	.byte	'resolution',0
+	.word	545
+	.byte	4,2,35,6,6
+	.byte	'periodPerRotation',0
+	.word	867
+	.byte	2,2,35,10,6
+	.byte	'resolutionFactor',0
+	.word	2312
+	.byte	1,2,35,12,6
+	.byte	'updatePeriod',0
+	.word	477
+	.byte	4,2,35,14,6
+	.byte	'speedModeThreshold',0
+	.word	477
+	.byte	4,2,35,18,6
+	.byte	'minSpeed',0
+	.word	477
+	.byte	4,2,35,22,6
+	.byte	'maxSpeed',0
+	.word	477
+	.byte	4,2,35,26,6
+	.byte	'speedFilterEnabled',0
+	.word	209
+	.byte	1,2,35,30,6
+	.byte	'speedFilerCutOffFrequency',0
+	.word	477
+	.byte	4,2,35,32,0
+.L14:
+	.byte	8
+	.word	2439
+	.byte	2
+	.byte	'short int',0,2,5,9
+	.byte	'__wchar_t',0,3,1,1
+	.word	2707
+	.byte	2
+	.byte	'unsigned int',0,4,7,9
+	.byte	'__size_t',0,3,1,1
+	.word	2738
+	.byte	2
+	.byte	'int',0,4,5,9
+	.byte	'__ptrdiff_t',0,3,1,1
+	.word	2771
+	.byte	21,1,8
+	.word	2798
+	.byte	9
+	.byte	'__codeptr',0,3,1,1
+	.word	2800
+	.byte	9
+	.byte	'__intptr_t',0,3,1,1
+	.word	2771
+	.byte	9
+	.byte	'__uintptr_t',0,3,1,1
+	.word	2738
+	.byte	9
+	.byte	'_iob_flag_t',0,4,82,25
+	.word	867
+	.byte	9
+	.byte	'uint8',0,5,89,24
+	.word	209
+	.byte	9
+	.byte	'sint16',0,5,90,24
+	.word	2707
+	.byte	9
+	.byte	'uint16',0,5,91,24
+	.word	867
+	.byte	9
+	.byte	'sint32',0,5,92,24
+	.word	545
+	.byte	9
+	.byte	'uint32',0,5,93,24
+	.word	188
+	.byte	9
+	.byte	'float32',0,5,94,24
+	.word	477
+	.byte	9
+	.byte	'boolean',0,5,104,24
+	.word	209
+	.byte	2
+	.byte	'long long int',0,8,5,9
+	.byte	'sint64',0,6,36,28
+	.word	2988
+	.byte	9
+	.byte	'pvoid',0,6,40,28
+	.word	394
+	.byte	9
+	.byte	'Ifx_TickTime',0,6,43,28
+	.word	2988
+	.byte	9
+	.byte	'IfxStdIf_Pos_ResolutionFactor',0,1,60,3
+	.word	2312
+	.byte	9
+	.byte	'IfxStdIf_Pos_SensorType',0,1,71,3
+	.word	1025
+	.byte	9
+	.byte	'IfxStdIf_Pos_Dir',0,1,79,3
+	.word	640
+	.byte	9
+	.byte	'IfxStdIf_Pos_Status',0,1,93,3
+	.word	355
+	.byte	9
+	.byte	'IfxStdIf_Pos',0,1,98,30
+	.word	1648
+	.byte	9
+	.byte	'IfxStdIf_Pos_Config',0,1,170,2,3
+	.word	2439
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L6:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,19,1,58,15,59,15,57,15,11,15
+	.byte	0,0,4,13,0,3,8,11,15,73,19,13,15,12,15,56,9,0,0,5,23,1,58,15,59,15,57,15,11,15,0,0,6,13,0,3,8,73,19,11
+	.byte	15,56,9,0,0,7,59,0,3,8,0,0,8,15,0,73,19,0,0,9,22,0,3,8,58,15,59,15,57,15,73,19,0,0,10,21,1,54,15,39,12
+	.byte	0,0,11,5,0,73,19,0,0,12,21,1,73,19,54,15,39,12,0,0,13,4,1,58,15,59,15,57,15,11,15,0,0,14,40,0,3,8,28,13
+	.byte	0,0,15,19,1,3,8,58,15,59,15,57,15,11,15,0,0,16,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0
+	.byte	17,5,0,3,8,58,15,59,15,57,15,73,19,0,0,18,11,0,0,0,19,46,1,49,19,0,0,20,5,0,49,19,0,0,21,21,0,54,15,0
+	.byte	0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L7:
+	.word	.L17-.L16
+.L16:
+	.half	3
+	.word	.L19-.L18
+.L18:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'C:\\TASKING\\TriCore v6.2r2\\ctc\\include\\',0,0
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\SrvSw\\StdIf\\IfxStdIf_Pos.h',0,0,0,0
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\SrvSw\\StdIf\\IfxStdIf.h',0,0,0,0
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\SrvSw\\StdIf\\IfxStdIf_Pos.c',0,0,0,0
+	.byte	'stdio.h',0,1,0,0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\Cpu\\Std\\Platform_Types.h',0
+	.byte	0,0,0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\Cpu\\Std\\Ifx_Types.h',0
+	.byte	0,0,0,0
+.L19:
+.L17:
+	.sdecl	'.debug_info',debug,cluster('IfxStdIf_Pos_initConfig')
+	.sect	'.debug_info'
+.L8:
+	.word	266
+	.half	3
+	.word	.L9
+	.byte	4,1
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\SrvSw\\StdIf\\IfxStdIf_Pos.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\Debug\\',0,12,1
+	.word	.L11,.L10
+	.byte	2
+	.word	.L4
+	.byte	3
+	.byte	'IfxStdIf_Pos_initConfig',0,1,28,6,1,1,1
+	.word	.L3,.L13,.L2
+	.byte	4
+	.byte	'config',0,1,28,53
+	.word	.L14,.L15
+	.byte	5
+	.word	.L3,.L13
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('IfxStdIf_Pos_initConfig')
+	.sect	'.debug_abbrev'
+.L9:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('IfxStdIf_Pos_initConfig')
+	.sect	'.debug_line'
+.L10:
+	.word	.L21-.L20
+.L20:
+	.half	3
+	.word	.L23-.L22
+.L22:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\SrvSw\\StdIf\\IfxStdIf_Pos.c',0,0,0,0,0
+.L23:
+	.byte	5,22,7,0,5,2
+	.word	.L3
+	.byte	3,29,1,5,20,1,5,22,9
+	.half	.L24-.L3
+	.byte	3,1,1,5,33,9
+	.half	.L25-.L24
+	.byte	3,2,1,5,24,3,127,1,5,31,9
+	.half	.L26-.L25
+	.byte	3,1,1,5,30,9
+	.half	.L27-.L26
+	.byte	3,1,1,5,26,9
+	.half	.L28-.L27
+	.byte	3,1,1,5,28,9
+	.half	.L29-.L28
+	.byte	1,5,26,9
+	.half	.L30-.L29
+	.byte	1,5,32,9
+	.half	.L31-.L30
+	.byte	3,1,1,5,22,9
+	.half	.L32-.L31
+	.byte	3,1,1,5,39,9
+	.half	.L33-.L32
+	.byte	3,1,1,5,22,9
+	.half	.L34-.L33
+	.byte	1,5,32,9
+	.half	.L35-.L34
+	.byte	3,1,1,5,39,9
+	.half	.L36-.L35
+	.byte	3,1,1,5,1,9
+	.half	.L37-.L36
+	.byte	3,2,1,7,9
+	.half	.L12-.L37
+	.byte	0,1,1
+.L21:
+	.sdecl	'.debug_ranges',debug,cluster('IfxStdIf_Pos_initConfig')
+	.sect	'.debug_ranges'
+.L11:
+	.word	-1,.L3,0,.L12-.L3,0,0
+	.sdecl	'.debug_loc',debug,cluster('IfxStdIf_Pos_initConfig')
+	.sect	'.debug_loc'
+.L2:
+	.word	-1,.L3,0,.L13-.L3
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L15:
+	.word	-1,.L3,0,.L13-.L3
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L38:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('IfxStdIf_Pos_initConfig')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L38,.L3,.L13-.L3
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+
+
+	; Module end

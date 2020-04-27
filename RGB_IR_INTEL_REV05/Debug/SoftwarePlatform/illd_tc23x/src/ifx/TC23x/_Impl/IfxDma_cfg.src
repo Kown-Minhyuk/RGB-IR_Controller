@@ -1,0 +1,136 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 07918494"
+	.compiler_invocation	"ctc -f cc13592a --dep-file=SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Impl\\.IfxDma_cfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc23x -D__CPU_TC23X__ --core=tc1.6.x --fp-model=+float -DNDEBUG -D__SWPLATFORM__ -DIFX_CFG_USE_COMPILER_DEFAULT_LINKER -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05 -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\APP\\inc -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_common/ifx_cfg/include -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/Configuration -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/Scu/Std/InitApi -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/Stm/Std/InitApi -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_tc23x/src/ifx/TC23x -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_tc23x/src/ifx/TC23x/_Reg -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_tc23x/src/ifx/SrvSw -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_common/ifx_cfg/include -g2 --no-warnings=542 --make-target=SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Impl\\IfxDma_cfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Impl\\IfxDma_cfg.src ..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Impl\\IfxDma_cfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Impl\\IfxDma_cfg.c'
+
+	
+$TC16X
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	582
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Impl\\IfxDma_cfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'short int',0,2,5,3
+	.byte	'__wchar_t',0,1,1,1
+	.word	186
+	.byte	2
+	.byte	'unsigned int',0,4,7,3
+	.byte	'__size_t',0,1,1,1
+	.word	217
+	.byte	2
+	.byte	'int',0,4,5,3
+	.byte	'__ptrdiff_t',0,1,1,1
+	.word	250
+	.byte	4,1,5
+	.word	277
+	.byte	3
+	.byte	'__codeptr',0,1,1,1
+	.word	279
+	.byte	3
+	.byte	'__intptr_t',0,1,1,1
+	.word	250
+	.byte	3
+	.byte	'__uintptr_t',0,1,1,1
+	.word	217
+	.byte	2
+	.byte	'unsigned short int',0,2,7,3
+	.byte	'_iob_flag_t',0,2,82,25
+	.word	341
+	.byte	2
+	.byte	'unsigned char',0,1,8,3
+	.byte	'uint8',0,3,89,24
+	.word	383
+	.byte	3
+	.byte	'sint16',0,3,90,24
+	.word	186
+	.byte	3
+	.byte	'uint16',0,3,91,24
+	.word	341
+	.byte	2
+	.byte	'long int',0,4,5,3
+	.byte	'sint32',0,3,92,24
+	.word	444
+	.byte	2
+	.byte	'unsigned long int',0,4,7,3
+	.byte	'uint32',0,3,93,24
+	.word	471
+	.byte	2
+	.byte	'long long int',0,8,5,3
+	.byte	'sint64',0,4,36,28
+	.word	507
+	.byte	6
+	.byte	'void',0,5
+	.word	539
+	.byte	3
+	.byte	'pvoid',0,4,40,28
+	.word	545
+	.byte	3
+	.byte	'Ifx_TickTime',0,4,43,28
+	.word	507
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,22,0,3,8,58,15,59,15,57,15
+	.byte	73,19,0,0,4,21,0,54,15,0,0,5,15,0,73,19,0,0,6,59,0,3,8,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L7-.L6
+.L6:
+	.half	3
+	.word	.L9-.L8
+.L8:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'C:\\TASKING\\TriCore v6.2r2\\ctc\\include\\',0,0
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Impl\\IfxDma_cfg.c',0,0,0,0
+	.byte	'stdio.h',0,1,0,0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\Cpu\\Std\\Platform_Types.h',0
+	.byte	0,0,0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\Cpu\\Std\\Ifx_Types.h',0
+	.byte	0,0,0,0
+.L9:
+.L7:
+
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	     1  /**
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	     2   * \file IfxDma_cfg.c
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	     3   * \brief DMA on-chip implementation data
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	     4   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	     5   * \version iLLD_1_0_0_11_0
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	     6   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	     7   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	     8   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	     9   *                                 IMPORTANT NOTICE
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	    10   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	    11   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	    12   * Infineon Technologies AG (Infineon) is supplying this file for use
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	    13   * exclusively with Infineon's microcontroller products. This file can be freely
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	    14   * distributed within development tools that are supporting such microcontroller
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	    15   * products.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	    16   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	    17   * THIS SOFTWARE IS PROVIDED "AS IS".  NO WARRANTIES, WHETHER EXPRESS, IMPLIED
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	    18   * OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	    19   * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	    20   * INFINEON SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL,
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	    21   * OR CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	    22   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	    23   */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	    24  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	    25  /******************************************************************************/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	    26  /*----------------------------------Includes----------------------------------*/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	    27  /******************************************************************************/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	    28  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxDma_cfg.c	    29  #include "IfxDma_cfg.h"
+
+	; Module end

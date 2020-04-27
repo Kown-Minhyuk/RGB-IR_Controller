@@ -1,0 +1,54 @@
+[Plugin]
+Name=iLLD_TC23x
+Implement=aurix_illd
+Caption=iLLD TC23x
+Description=IFX Low Level Drivers TC23x
+GlobalCompileOption0=-I"$(SWP_ABSPATH)/src/ifx/TC23x"
+GlobalCompileOption1=-I"$(SWP_ABSPATH)/src/ifx/TC23x/_Reg"
+GlobalCompileOption2=-I"$(SWP_ABSPATH)/src/ifx/SrvSw"
+GlobalCompileOption3=-DIFX_CFG_USE_COMPILER_DEFAULT_LINKER
+SourceDir=$(SWP_RELPATH)/src
+NameSpacePrefix=aurix_illd
+Require0=ifx_cfg
+HelpUrl=http://doc.tasking.com/act/illd_1_0_0_11_0/TC23x/html/index.html
+Exclude=doc
+
+[Available_If0]
+Kind=ENVIRONMENT
+Name=DEVICE
+Value=TC23X
+Condition=REQ
+
+; Note: keep in sync with iLLD library and keep up-to-date in all library Plugins
+[Option0]
+Name=iLLD Library Version
+Kind=STRING
+AutoValue=1.0.0.11.0
+
+[Option1]
+Name=IFX_ASSERT
+Description=Use assertion in iLLD Library code
+Kind=Boolean
+DefaultValue=True
+
+[Option2]
+Name=XTAL_FREQ
+Description=SCU XTAL Frequency (Hz)
+Kind=UINT32
+DefaultValue=20000000
+
+[Option2_AutoSet0]
+Option=xtal_freq_from_illd
+Interface=IfxScu
+
+[Option3]
+Name=PLL_FREQ
+Description=SCU PLL Frequency (Hz)
+Kind=UINT32
+DefaultValue=200000000
+
+[Option4]
+Name=IFX_USE_SW_MANAGED_INT
+Description=Use software managed interupts in iLLD Library code
+Kind=Boolean
+DefaultValue=False

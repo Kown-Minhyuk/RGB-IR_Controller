@@ -1,0 +1,452 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 07918494"
+	.compiler_invocation	"ctc -f cc18536a --dep-file=SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Lib\\InternalMux\\.Ifx_InternalMux.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc23x -D__CPU_TC23X__ --core=tc1.6.x --fp-model=+float -DNDEBUG -D__SWPLATFORM__ -DIFX_CFG_USE_COMPILER_DEFAULT_LINKER -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05 -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\APP\\inc -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_common/ifx_cfg/include -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/Configuration -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/Scu/Std/InitApi -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/Stm/Std/InitApi -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_tc23x/src/ifx/TC23x -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_tc23x/src/ifx/TC23x/_Reg -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_tc23x/src/ifx/SrvSw -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_common/ifx_cfg/include -g2 --no-warnings=542 --make-target=SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Lib\\InternalMux\\Ifx_InternalMux.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Lib\\InternalMux\\Ifx_InternalMux.src ..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Lib\\InternalMux\\Ifx_InternalMux.c"
+	.compiler_name		"ctc"
+	;source	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Lib\\InternalMux\\Ifx_InternalMux.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.Ifx_InternalMux.Ifx_InternalMux_init',code,cluster('Ifx_InternalMux_init')
+	.sect	'.text.Ifx_InternalMux.Ifx_InternalMux_init'
+	.align	2
+	
+	.global	Ifx_InternalMux_init
+
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	     1  /**
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	     2   * \file Ifx_InternalMux.c
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	     3   * \brief Mux configuration functions
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	     4   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	     5   * \version iLLD_1_0_0_11_0
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	     6   * \copyright Copyright (c) 2015 Infineon Technologies AG. All rights reserved.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	     7   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	     8   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	     9   *                                 IMPORTANT NOTICE
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    10   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    11   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    12   * Infineon Technologies AG (Infineon) is supplying this file for use
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    13   * exclusively with Infineon's microcontroller products. This file can be freely
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    14   * distributed within development tools that are supporting such microcontroller
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    15   * products.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    16   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    17   * THIS SOFTWARE IS PROVIDED "AS IS".  NO WARRANTIES, WHETHER EXPRESS, IMPLIED
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    18   * OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    19   * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    20   * INFINEON SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL,
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    21   * OR CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    22   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    23   */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    24  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    25  /******************************************************************************/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    26  /*----------------------------------Includes----------------------------------*/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    27  /******************************************************************************/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    28  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    29  #include "Ifx_InternalMux.h"
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    30  #include "Cpu/Std/IfxCpu_Intrinsics.h"
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    31  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    32  /******************************************************************************/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    33  /*-------------------------Function Implementations---------------------------*/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    34  /******************************************************************************/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    35  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    36  void Ifx_InternalMux_init(const Ifx_InternalMux_Config *cfg)
+; Function Ifx_InternalMux_init
+.L6:
+Ifx_InternalMux_init:	.type	func
+	sub.a	a10,#16
+.L33:
+
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    37  {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    38      int i;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    39  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    40      for (i = 0; i < cfg->size; i++)
+	mov	d0,#0
+	j	.L2
+.L3:
+
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    41      {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    42          Ifx_InternalMux_MuxConfig muxCfg = cfg->muxConfig[i];
+	mul	d15,d0,#12
+	ld.a	a15,[a4]4
+.L42:
+	mov.aa	a2,a10
+	mov.a	a5,#2
+.L43:
+	addsc.a	a15,a15,d15,#0
+.L4:
+	ld.w	d15,[a15+]
+	st.w	[a2+],d15
+	loop	a5,.L4
+.L25:
+
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    43  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    44          /*Load modify store operation done to insert the value to the register bit field*/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    45          __ldmst((void *)(muxCfg.regAddr), muxCfg.mask, muxCfg.value);
+	ld.a	a15,[a10]
+	ld.w	d15,[a10]4
+	ld.w	d1,[a10]8
+.L44:
+
+; D:\00.Tasking_workspace\DVRS_INTEL\RGB_IR_INTEL_REV05\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\Std\IfxCpu_IntrinsicsTasking.h	   207      __asm("\tmov d3, %1 \n"      (inlined)
+	
+		mov d3, d15 
+	mov d2, d1 
+	ldmst [a15],e2
+	
+.L21:
+	add	d0,#1
+.L2:
+	ld.w	d15,[a4]
+.L45:
+	jlt.u	d0,d15,.L3
+.L46:
+
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    46      }
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Lib\InternalMux\Ifx_InternalMux.c	    47  }
+	ret
+.L16:
+	
+__Ifx_InternalMux_init_function_end:
+	.size	Ifx_InternalMux_init,__Ifx_InternalMux_init_function_end-Ifx_InternalMux_init
+.L15:
+	; End of function
+	
+	.calls	'Ifx_InternalMux_init','',16
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L8:
+	.word	1035
+	.half	3
+	.word	.L9
+	.byte	4
+.L7:
+	.byte	1
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Lib\\InternalMux\\Ifx_InternalMux.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\Debug\\',0,12,1
+	.word	.L10
+	.byte	2
+	.byte	'void',0,3
+	.word	202
+	.byte	4
+	.word	208
+	.byte	5
+	.byte	'unsigned long int',0,4,7
+.L24:
+	.byte	6
+	.byte	'__ldmstAsm',0,3,1,205,1,17,1,1
+.L26:
+	.byte	7
+	.byte	'addr',0,1,205,1,43
+	.word	213
+.L28:
+	.byte	7
+	.byte	'mask',0,1,205,1,56
+	.word	218
+.L30:
+	.byte	7
+	.byte	'data',0,1,205,1,69
+	.word	218
+.L32:
+	.byte	8,0,5
+	.byte	'unsigned long long int',0,8,7,4
+	.word	202
+	.byte	9
+	.byte	'__ld64',0,3,2,110,19
+	.word	302
+	.byte	1,1,7
+	.byte	'addr',0,2,110,32
+	.word	328
+	.byte	8,0,6
+	.byte	'__st64',0,3,2,118,17,1,1,7
+	.byte	'addr',0,2,118,30
+	.word	328
+	.byte	7
+	.byte	'value',0,2,118,43
+	.word	302
+	.byte	8,0
+.L22:
+	.byte	10,3,45,9,12,11
+	.byte	'regAddr',0
+	.word	213
+	.byte	4,2,35,0,11
+	.byte	'mask',0
+	.word	218
+	.byte	4,2,35,4,11
+	.byte	'value',0
+	.word	218
+	.byte	4,2,35,8,0,4
+	.word	409
+	.byte	10,3,55,9,8,11
+	.byte	'size',0
+	.word	218
+	.byte	4,2,35,0,11
+	.byte	'muxConfig',0
+	.word	461
+	.byte	4,2,35,4,0,12
+	.word	466
+.L17:
+	.byte	4
+	.word	505
+.L19:
+	.byte	5
+	.byte	'int',0,4,5,13
+	.word	239
+	.byte	14
+	.word	258
+	.byte	14
+	.word	272
+	.byte	14
+	.word	286
+	.byte	8,0,13
+	.word	333
+	.byte	14
+	.word	351
+	.byte	8,0,13
+	.word	366
+	.byte	14
+	.word	380
+	.byte	14
+	.word	393
+	.byte	8,0,5
+	.byte	'short int',0,2,5,15
+	.byte	'__wchar_t',0,4,1,1
+	.word	573
+	.byte	5
+	.byte	'unsigned int',0,4,7,15
+	.byte	'__size_t',0,4,1,1
+	.word	604
+	.byte	15
+	.byte	'__ptrdiff_t',0,4,1,1
+	.word	515
+	.byte	16,1,4
+	.word	657
+	.byte	15
+	.byte	'__codeptr',0,4,1,1
+	.word	659
+	.byte	15
+	.byte	'__intptr_t',0,4,1,1
+	.word	515
+	.byte	15
+	.byte	'__uintptr_t',0,4,1,1
+	.word	604
+	.byte	5
+	.byte	'unsigned short int',0,2,7,15
+	.byte	'_iob_flag_t',0,5,82,25
+	.word	721
+	.byte	5
+	.byte	'unsigned char',0,1,8,15
+	.byte	'uint8',0,6,89,24
+	.word	763
+	.byte	15
+	.byte	'sint16',0,6,90,24
+	.word	573
+	.byte	15
+	.byte	'uint16',0,6,91,24
+	.word	721
+	.byte	5
+	.byte	'long int',0,4,5,15
+	.byte	'sint32',0,6,92,24
+	.word	824
+	.byte	15
+	.byte	'uint32',0,6,93,24
+	.word	218
+	.byte	5
+	.byte	'float',0,4,4,15
+	.byte	'float32',0,6,94,24
+	.word	866
+	.byte	5
+	.byte	'long long int',0,8,5,15
+	.byte	'sint64',0,7,36,28
+	.word	891
+	.byte	15
+	.byte	'uint64',0,7,37,28
+	.word	302
+	.byte	15
+	.byte	'pvoid',0,7,40,28
+	.word	328
+	.byte	15
+	.byte	'Ifx_TickTime',0,7,43,28
+	.word	891
+	.byte	15
+	.byte	'Ifx_InternalMux_MuxConfig',0,3,50,3
+	.word	409
+	.byte	15
+	.byte	'Ifx_InternalMux_Config',0,3,59,2
+	.word	466
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L9:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,59,0,3,8,0,0,3,53,0,73,19,0,0,4,15,0,73,19,0,0,5,36,0
+	.byte	3,8,11,15,62,15,0,0,6,46,1,3,8,32,13,58,15,59,15,57,15,54,15,39,12,0,0,7,5,0,3,8,58,15,59,15,57,15,73
+	.byte	19,0,0,8,11,0,0,0,9,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,10,19,1,58,15,59,15,57,15,11
+	.byte	15,0,0,11,13,0,3,8,73,19,11,15,56,9,0,0,12,38,0,73,19,0,0,13,46,1,49,19,0,0,14,5,0,49,19,0,0,15,22,0,3
+	.byte	8,58,15,59,15,57,15,73,19,0,0,16,21,0,54,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L10:
+	.word	.L35-.L34
+.L34:
+	.half	3
+	.word	.L37-.L36
+.L36:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'C:\\TASKING\\TriCore v6.2r2\\ctc\\include\\',0,0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\Cpu\\Std\\IfxCpu_IntrinsicsTasking.h',0
+	.byte	0,0,0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\Cpu\\Std\\IfxCpu_Intrinsics.h',0
+	.byte	0,0,0
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Lib\\InternalMux\\Ifx_InternalMux.h',0,0,0,0
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Lib\\InternalMux\\Ifx_InternalMux.c',0,0,0,0
+	.byte	'stdio.h',0,1,0,0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\Cpu\\Std\\Platform_Types.h',0
+	.byte	0,0,0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\Cpu\\Std\\Ifx_Types.h',0
+	.byte	0,0,0,0
+.L37:
+.L35:
+	.sdecl	'.debug_info',debug,cluster('Ifx_InternalMux_init')
+	.sect	'.debug_info'
+.L11:
+	.word	372
+	.half	3
+	.word	.L12
+	.byte	4,1
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Lib\\InternalMux\\Ifx_InternalMux.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\Debug\\',0,12,1
+	.word	.L14,.L13
+	.byte	2
+	.word	.L7
+	.byte	3
+	.byte	'Ifx_InternalMux_init',0,1,36,6,1,1,1
+	.word	.L6,.L16,.L5
+	.byte	4
+	.byte	'cfg',0,1,36,57
+	.word	.L17,.L18
+	.byte	5
+	.word	.L6,.L16
+	.byte	6
+	.byte	'i',0,1,38,9
+	.word	.L19,.L20
+	.byte	5
+	.word	.L3,.L21
+	.byte	6
+	.byte	'muxCfg',0,1,42,35
+	.word	.L22,.L23
+	.byte	7
+	.word	.L24,.L25,.L21
+	.byte	8
+	.word	.L26,.L27
+	.byte	8
+	.word	.L28,.L29
+	.byte	8
+	.word	.L30,.L31
+	.byte	9
+	.word	.L32,.L25,.L21
+	.byte	0,0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_InternalMux_init')
+	.sect	'.debug_abbrev'
+.L12:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,7,29,1,49,16,17,1,18,1,0,0,8,5,0,49,16,2,6,0,0,9,11,0,49,16,17,1,18
+	.byte	1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_InternalMux_init')
+	.sect	'.debug_line'
+.L13:
+	.word	.L39-.L38
+.L38:
+	.half	3
+	.word	.L41-.L40
+.L40:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Lib\\InternalMux\\Ifx_InternalMux.c',0,0,0,0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\Cpu\\Std\\IfxCpu_IntrinsicsTasking.h',0
+	.byte	0,0,0,0
+.L41:
+	.byte	5,6,7,0,5,2
+	.word	.L6
+	.byte	3,35,1,5,12,9
+	.half	.L33-.L6
+	.byte	3,4,1,5,30,1,5,58,9
+	.half	.L3-.L33
+	.byte	3,2,1,5,47,1,5,42,9
+	.half	.L42-.L3
+	.byte	1,5,58,9
+	.half	.L43-.L42
+	.byte	1,5,42,9
+	.half	.L4-.L43
+	.byte	1,5,9,9
+	.half	.L25-.L4
+	.byte	3,3,1,4,2,5,5,9
+	.half	.L44-.L25
+	.byte	3,162,1,1,4,1,5,33,9
+	.half	.L21-.L44
+	.byte	3,217,126,1,5,24,9
+	.half	.L2-.L21
+	.byte	1,5,30,9
+	.half	.L45-.L2
+	.byte	1,5,1,7,9
+	.half	.L46-.L45
+	.byte	3,7,1,7,9
+	.half	.L15-.L46
+	.byte	0,1,1
+.L39:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_InternalMux_init')
+	.sect	'.debug_ranges'
+.L14:
+	.word	-1,.L6,0,.L15-.L6,0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_InternalMux_init')
+	.sect	'.debug_loc'
+.L5:
+	.word	-1,.L6,0,.L33-.L6
+	.half	2
+	.byte	138,0
+	.word	.L33-.L6,.L16-.L6
+	.half	2
+	.byte	138,16
+	.word	.L16-.L6,.L16-.L6
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L27:
+	.word	0,0
+.L18:
+	.word	-1,.L6,0,.L16-.L6
+	.half	1
+	.byte	100
+	.word	0,0
+.L31:
+	.word	0,0
+.L20:
+	.word	-1,.L6,.L3-.L6,.L16-.L6
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L29:
+	.word	0,0
+.L23:
+	.word	-1,.L6,0,.L16-.L6
+	.half	2
+	.byte	145,112
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L47:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,27,8,26,8,28,8,29,8,30,8,31,8,34,8,35,8,32,8,33,8,16,8,17,8,24,8,25,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Ifx_InternalMux_init')
+	.sect	'.debug_frame'
+	.word	40
+	.word	.L47,.L6,.L16-.L6
+	.byte	8,19,8,22,8,23,4
+	.word	(.L33-.L6)/2
+	.byte	19,16,22,26,3,19,138,16,4
+	.word	(.L16-.L33)/2
+	.byte	19,0,8,26
+
+
+	; Module end

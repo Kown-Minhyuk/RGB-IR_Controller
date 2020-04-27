@@ -1,0 +1,9 @@
+[Plugin]
+Name=ifx_cfg
+Implement=ifx_cfg
+SourceFile0=$(SWP_RELPATH)/src/ifx_cfg.c
+; INTERNAL interfaces do not export their PublicDir
+GlobalCompileOption0=-I"$(SWP_ABSPATH)/include"
+
+; suppress known erroneous compiler warning for some generated plugin configurations
+FrameworkCompileOption0=-Wc--no-warnings=542

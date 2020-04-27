@@ -1,0 +1,187 @@
+
+[Available_If0]
+Kind=ENVIRONMENT
+Name=DEVICE
+Value=TC29XB
+Condition=REQ
+
+[Plugin]
+Name=IfxScu_TC29XB
+Implement=IfxScu
+NameSpacePrefix=IfxScu
+
+Caption=Scu Peripheral
+Description=Scu Peripheral
+
+
+GenerateInclude0=IfxScuCcu_ActInit.h
+SourceFile0=$(SWP_RELPATH)/InitApi/IfxScuCcu_ActInit.c
+
+
+GeneratePeripheralInstanceMacros=true
+
+; instances
+
+Instance0=IFX_SCU0
+
+; hidden option to set xtalFrequency instance option
+; this option is auto set from illd software service value XTAL_FREQ
+[Option0]
+Name=xtal_freq_from_illd
+Kind=UINT32
+
+; not visible to user
+[Option0_Hide_If0]
+Kind=True
+
+[Instance]
+; field needed to make sure section is not empty
+Require0=
+
+[Instance_Option0]
+Name=Module
+Caption=Module Instance
+Description=SCU Module Instance
+Type=Ifx_SCU*
+Kind=ENUM
+
+EnumValue0=&MODULE_SCU
+Enum0=SCU0
+Instance0_DefaultValue=SCU0
+
+; no code generation, this option value is used from the driver plugin
+NoGenerate=true
+
+; always hide module option
+[Instance_Option0_Hide_If0]
+Kind=True
+
+;----------------------------------------------------------------------------------------
+; Instance options are used to fill in struct IfxScuCcu_Config and its substructures
+;----------------------------------------------------------------------------------------
+;typedef struct
+;{
+;    IfxScuCcu_SysPllConfig        sysPll;
+;    IfxScuCcu_ClockDistributionConfigclockDistribution;
+;    IfxScuCcu_FlashWaitstateConfigflashFconWaitStateConfig;
+;    uint32                        xtalFrequency;
+;} IfxScuCcu_Config;
+
+[Instance_Option1]
+Name=Config
+CodeName=ccuConfig
+Caption=Config
+Description=Configuration structure SCU module
+Type=IfxScuCcu_Config
+Kind=STRUCT
+NoGenerate=true
+;----------------------------------------------------------------------------------------
+;----------------------------------------------------------------------------------------
+; Instance options are used to fill in struct IfxScuCcu_SysPllConfig and its substructures
+;----------------------------------------------------------------------------------------
+;typedef struct
+;{
+;    uint8                         numOfPllDividerSteps;
+;    IfxScuCcu_PllStepsConfig*     pllDividerStep;
+;    IfxScuCcu_InitialStepConfig   pllInitialStep;
+;} IfxScuCcu_SysPllConfig;
+
+[Instance_Option2]
+Name=Config.sysPll
+Caption=sys Pll
+Description=System PLL configuration
+Type=IfxScuCcu_SysPllConfig
+Kind=STRUCT
+
+NoGenerate=true
+
+;----------------------------------------------------------------------------------------
+;uint8    numOfPllDividerSteps;
+[Instance_Option3]
+Name=Config.sysPll.numOfPllDividerSteps
+Caption=num Of Pll Divider Steps
+Description=Number of PLL divider steps during clock throttling.
+Type=uint8
+
+Kind=Enum
+EnumValue0=0
+Enum0=sizeof(IFXSCU_CFG_PLL_STEPS) / sizeof(IfxScuCcu_PllStepsConfig)
+AutoValue=sizeof(IFXSCU_CFG_PLL_STEPS) / sizeof(IfxScuCcu_PllStepsConfig)
+NoGenerate=true
+
+;----------------------------------------------------------------------------------------
+;IfxScuCcu_PllStepsConfig*    pllDividerStep;
+[Instance_Option4]
+Name=Config.sysPll.pllDividerStep
+Caption=pll Divider Step
+Description=Pointer to the array of Pll divider step configuration.
+Type=IfxScuCcu_PllStepsConfig*
+
+Kind=Enum
+
+EnumValue0=IFXSCU_CFG_PLL_STEPS
+
+Enum0=IFXSCU_CFG_PLL_STEPS
+
+AutoValue=IFXSCU_CFG_PLL_STEPS
+NoGenerate=true
+
+;----------------------------------------------------------------------------------------
+;IfxScuCcu_InitialStepConfig    pllInitialStep;
+[Instance_Option5]
+Name=Config.sysPll.pllInitialStep
+Caption=pll Initial Step
+Description=Configuration of first step which is same as internal osc frequency.
+Type=IfxScuCcu_InitialStepConfig
+
+Kind=Enum
+
+EnumValue0=IFXSCU_CFG_PLL_INITIAL_STEPS
+
+Enum0=IFXSCU_CFG_PLL_INITIAL_STEPS
+
+AutoValue=IFXSCU_CFG_PLL_INITIAL_STEPS
+NoGenerate=true
+
+
+;----------------------------------------------------------------------------------------
+;IfxScuCcu_ClockDistributionConfig    clockDistribution;
+[Instance_Option6]
+Name=Config.clockDistribution
+Caption=clock Distribution
+Description=Configuration of of bus clocks and other module clock distribution.
+Type=IfxScuCcu_ClockDistributionConfig
+
+Kind=ENUM
+
+EnumValue0=IFXSCU_CFG_CLK_DISTRIBUTION
+Enum0=IFXSCU_CFG_CLK_DISTRIBUTION
+
+AutoValue=IFXSCU_CFG_CLK_DISTRIBUTION
+NoGenerate=true
+
+;----------------------------------------------------------------------------------------
+;IfxScuCcu_FlashWaitstateConfig    flashFconWaitStateConfig;
+[Instance_Option7]
+Name=Config.flashFconWaitStateConfig
+Caption=flash Fcon Wait State Config
+Description=Configuration of flash waitstate
+Type=IfxScuCcu_FlashWaitstateConfig
+
+Kind=ENUM
+
+EnumValue0=IFXSCU_CFG_FLASH_WAITSTATE
+Enum0=IFXSCU_CFG_FLASH_WAITSTATE
+
+AutoValue=IFXSCU_CFG_FLASH_WAITSTATE
+NoGenerate=true
+
+;----------------------------------------------------------------------------------------
+;uint32    xtalFrequency;
+[Instance_Option8]
+Name=Config.xtalFrequency
+Caption=xtal Frequency
+Description=Xtal Frequency
+Type=uint32
+Kind=UINT32
+AutoValue=xtal_freq_from_illd

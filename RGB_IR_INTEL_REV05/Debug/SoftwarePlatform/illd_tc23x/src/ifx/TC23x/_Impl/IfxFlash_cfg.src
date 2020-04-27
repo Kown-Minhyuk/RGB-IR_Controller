@@ -1,0 +1,465 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 07918494"
+	.compiler_invocation	"ctc -f cc9996a --dep-file=SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Impl\\.IfxFlash_cfg.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc23x -D__CPU_TC23X__ --core=tc1.6.x --fp-model=+float -DNDEBUG -D__SWPLATFORM__ -DIFX_CFG_USE_COMPILER_DEFAULT_LINKER -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05 -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\APP\\inc -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_common/ifx_cfg/include -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/Configuration -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/Scu/Std/InitApi -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/Stm/Std/InitApi -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_tc23x/src/ifx/TC23x -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_tc23x/src/ifx/TC23x/_Reg -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_tc23x/src/ifx/SrvSw -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_common/ifx_cfg/include -g2 --no-warnings=542 --make-target=SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Impl\\IfxFlash_cfg.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Impl\\IfxFlash_cfg.src ..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Impl\\IfxFlash_cfg.c"
+	.compiler_name		"ctc"
+	;source	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Impl\\IfxFlash_cfg.c'
+
+	
+$TC16X
+	
+	.sdecl	'.rodata.IfxFlash_cfg.IfxFlash_dFlashTableEepLog',data,rom,cluster('IfxFlash_dFlashTableEepLog')
+	.sect	'.rodata.IfxFlash_cfg.IfxFlash_dFlashTableEepLog'
+	.global	IfxFlash_dFlashTableEepLog
+	.align	4
+IfxFlash_dFlashTableEepLog:	.type	object
+	.size	IfxFlash_dFlashTableEepLog,128
+	.word	-1358954496,-1358946305,-1358946304,-1358938113
+	.word	-1358938112,-1358929921,-1358929920,-1358921729
+	.word	-1358921728,-1358913537,-1358913536,-1358905345
+	.word	-1358905344,-1358897153,-1358897152,-1358888961
+	.word	-1358888960,-1358880769,-1358880768,-1358872577
+	.word	-1358872576,-1358864385,-1358864384,-1358856193
+	.word	-1358856192,-1358848001,-1358848000,-1358839809
+	.word	-1358839808,-1358831617,-1358831616,-1358823425
+	.sdecl	'.zrodata.IfxFlash_cfg.IfxFlash_dFlashTablePhys',data,rom,cluster('IfxFlash_dFlashTablePhys')
+	.sect	'.zrodata.IfxFlash_cfg.IfxFlash_dFlashTablePhys'
+	.global	IfxFlash_dFlashTablePhys
+	.align	4
+IfxFlash_dFlashTablePhys:	.type	object
+	.size	IfxFlash_dFlashTablePhys,8
+	.word	-1358954496,-1358823425
+	.sdecl	'.rodata.IfxFlash_cfg.IfxFlash_dFlashTableUcbLog',data,rom,cluster('IfxFlash_dFlashTableUcbLog')
+	.sect	'.rodata.IfxFlash_cfg.IfxFlash_dFlashTableUcbLog'
+	.global	IfxFlash_dFlashTableUcbLog
+	.align	4
+IfxFlash_dFlashTableUcbLog:	.type	object
+	.size	IfxFlash_dFlashTableUcbLog,128
+	.word	-1357905920,-1357904897,-1357904896,-1357903873
+	.word	-1357903872,-1357902849,-1357902848,-1357901825
+	.word	-1357901824,-1357900801,-1357900800,-1357899777
+	.word	-1357899776,-1357898753,-1357898752,-1357897729
+	.word	-1357897728,-1357896705,-1357896704,-1357895681
+	.word	-1357895680,-1357894657,-1357894656,-1357893633
+	.word	-1357893632,-1357892609,-1357892608,-1357891585
+	.word	-1357891584,-1357890561,-1357890560,-1357889537
+	.sdecl	'.rodata.IfxFlash_cfg.IfxFlash_pFlashTableLog',data,rom,cluster('IfxFlash_pFlashTableLog')
+	.sect	'.rodata.IfxFlash_cfg.IfxFlash_pFlashTableLog'
+	.global	IfxFlash_pFlashTableLog
+	.align	4
+IfxFlash_pFlashTableLog:	.type	object
+	.size	IfxFlash_pFlashTableLog,216
+	.word	-1610612736,-1610596353,-1610596352,-1610579969
+	.word	-1610579968,-1610563585,-1610563584,-1610547201
+	.word	-1610547200,-1610530817,-1610530816,-1610514433
+	.word	-1610514432,-1610498049,-1610498048,-1610481665
+	.word	-1610481664,-1610448897,-1610448896,-1610416129
+	.word	-1610416128,-1610383361,-1610383360,-1610350593
+	.word	-1610350592,-1610317825,-1610317824,-1610285057
+	.word	-1610285056,-1610252289,-1610252288,-1610219521
+	.word	-1610219520,-1610153985,-1610153984,-1610088449
+	.word	-1610088448,-1610022913,-1610022912,-1609957377
+	.word	-1609957376,-1609826305,-1609826304,-1609695233
+	.word	-1609695232,-1609564161,-1609564160,-1609302017
+	.word	-1609302016,-1609039873,-1609039872,-1608777729
+	.word	-1608777728,-1608515585
+	.sdecl	'.rodata.IfxFlash_cfg.IfxFlash_pFlashTablePhys',data,rom,cluster('IfxFlash_pFlashTablePhys')
+	.sect	'.rodata.IfxFlash_cfg.IfxFlash_pFlashTablePhys'
+	.global	IfxFlash_pFlashTablePhys
+	.align	4
+IfxFlash_pFlashTablePhys:	.type	object
+	.size	IfxFlash_pFlashTablePhys,32
+	.word	-1610612736,-1610088449,-1610088448,-1609564161
+	.word	-1609564160,-1609039873,-1609039872,-1608515585
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	883
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Impl\\IfxFlash_cfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'unsigned long long int',0,8,7,3
+	.byte	'void',0,4
+	.word	214
+	.byte	5
+	.byte	'__ld64',0,3,1,110,19
+	.word	188
+	.byte	1,1,6
+	.byte	'addr',0,1,110,32
+	.word	220
+	.byte	7,0,8
+	.byte	'__st64',0,3,1,118,17,1,1,6
+	.byte	'addr',0,1,118,30
+	.word	220
+	.byte	6
+	.byte	'value',0,1,118,43
+	.word	188
+	.byte	7,0,9
+	.word	225
+	.byte	10
+	.word	243
+	.byte	7,0,9
+	.word	258
+	.byte	10
+	.word	272
+	.byte	10
+	.word	285
+	.byte	7,0,2
+	.byte	'short int',0,2,5,11
+	.byte	'__wchar_t',0,2,1,1
+	.word	330
+	.byte	2
+	.byte	'unsigned int',0,4,7,11
+	.byte	'__size_t',0,2,1,1
+	.word	361
+	.byte	2
+	.byte	'int',0,4,5,11
+	.byte	'__ptrdiff_t',0,2,1,1
+	.word	394
+	.byte	12,1,4
+	.word	421
+	.byte	11
+	.byte	'__codeptr',0,2,1,1
+	.word	423
+	.byte	11
+	.byte	'__intptr_t',0,2,1,1
+	.word	394
+	.byte	11
+	.byte	'__uintptr_t',0,2,1,1
+	.word	361
+	.byte	2
+	.byte	'unsigned short int',0,2,7,11
+	.byte	'_iob_flag_t',0,3,82,25
+	.word	485
+	.byte	2
+	.byte	'unsigned char',0,1,8,11
+	.byte	'uint8',0,4,89,24
+	.word	527
+	.byte	11
+	.byte	'sint16',0,4,90,24
+	.word	330
+	.byte	11
+	.byte	'uint16',0,4,91,24
+	.word	485
+	.byte	2
+	.byte	'long int',0,4,5,11
+	.byte	'sint32',0,4,92,24
+	.word	588
+	.byte	2
+	.byte	'unsigned long int',0,4,7,11
+	.byte	'uint32',0,4,93,24
+	.word	615
+	.byte	2
+	.byte	'float',0,4,4,11
+	.byte	'float32',0,4,94,24
+	.word	651
+	.byte	2
+	.byte	'long long int',0,8,5,11
+	.byte	'sint64',0,5,36,28
+	.word	676
+	.byte	11
+	.byte	'uint64',0,5,37,28
+	.word	188
+	.byte	11
+	.byte	'pvoid',0,5,40,28
+	.word	220
+	.byte	11
+	.byte	'Ifx_TickTime',0,5,43,28
+	.word	676
+	.byte	13,6,146,1,9,8,14
+	.byte	'start',0
+	.word	615
+	.byte	4,2,35,0,14
+	.byte	'end',0
+	.word	615
+	.byte	4,2,35,4,0,11
+	.byte	'IfxFlash_flashSector',0,6,150,1,3
+	.word	758
+	.byte	15,128,1
+	.word	758
+	.byte	16,15,0
+.L16:
+	.byte	17
+	.word	823
+	.byte	15,8
+	.word	758
+	.byte	16,0,0
+.L17:
+	.byte	17
+	.word	838
+.L18:
+	.byte	17
+	.word	823
+	.byte	15,216,1
+	.word	758
+	.byte	16,26,0
+.L19:
+	.byte	17
+	.word	857
+	.byte	15,32
+	.word	758
+	.byte	16,3,0
+.L20:
+	.byte	17
+	.word	872
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,59,0,3,8,0,0,4,15,0,73,19,0
+	.byte	0,5,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,6,5,0,3,8,58,15,59,15,57,15,73,19,0,0,7,11
+	.byte	0,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,54,15,39,12,0,0,9,46,1,49,19,0,0,10,5,0,49,19,0,0,11,22,0,3,8
+	.byte	58,15,59,15,57,15,73,19,0,0,12,21,0,54,15,0,0,13,19,1,58,15,59,15,57,15,11,15,0,0,14,13,0,3,8,73,19,11
+	.byte	15,56,9,0,0,15,1,1,11,15,73,19,0,0,16,33,0,47,15,0,0,17,38,0,73,19,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L22-.L21
+.L21:
+	.half	3
+	.word	.L24-.L23
+.L23:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'C:\\TASKING\\TriCore v6.2r2\\ctc\\include\\',0,0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\Cpu\\Std\\IfxCpu_Intrinsics.h',0
+	.byte	0,0,0
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Impl\\IfxFlash_cfg.c',0,0,0,0
+	.byte	'stdio.h',0,1,0,0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\Cpu\\Std\\Platform_Types.h',0
+	.byte	0,0,0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\Cpu\\Std\\Ifx_Types.h',0
+	.byte	0,0,0
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Impl\\IfxFlash_cfg.h',0,0,0,0,0
+.L24:
+.L22:
+	.sdecl	'.debug_info',debug,cluster('IfxFlash_dFlashTableEepLog')
+	.sect	'.debug_info'
+.L6:
+	.word	228
+	.half	3
+	.word	.L7
+	.byte	4,1
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Impl\\IfxFlash_cfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'IfxFlash_dFlashTableEepLog',0,2,35,28
+	.word	.L16
+	.byte	1,5,3
+	.word	IfxFlash_dFlashTableEepLog
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('IfxFlash_dFlashTableEepLog')
+	.sect	'.debug_abbrev'
+.L7:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('IfxFlash_dFlashTablePhys')
+	.sect	'.debug_info'
+.L8:
+	.word	226
+	.half	3
+	.word	.L9
+	.byte	4,1
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Impl\\IfxFlash_cfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'IfxFlash_dFlashTablePhys',0,2,54,28
+	.word	.L17
+	.byte	1,5,3
+	.word	IfxFlash_dFlashTablePhys
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('IfxFlash_dFlashTablePhys')
+	.sect	'.debug_abbrev'
+.L9:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('IfxFlash_dFlashTableUcbLog')
+	.sect	'.debug_info'
+.L10:
+	.word	228
+	.half	3
+	.word	.L11
+	.byte	4,1
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Impl\\IfxFlash_cfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'IfxFlash_dFlashTableUcbLog',0,2,58,28
+	.word	.L18
+	.byte	1,5,3
+	.word	IfxFlash_dFlashTableUcbLog
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('IfxFlash_dFlashTableUcbLog')
+	.sect	'.debug_abbrev'
+.L11:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('IfxFlash_pFlashTableLog')
+	.sect	'.debug_info'
+.L12:
+	.word	225
+	.half	3
+	.word	.L13
+	.byte	4,1
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Impl\\IfxFlash_cfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'IfxFlash_pFlashTableLog',0,2,77,28
+	.word	.L19
+	.byte	1,5,3
+	.word	IfxFlash_pFlashTableLog
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('IfxFlash_pFlashTableLog')
+	.sect	'.debug_abbrev'
+.L13:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('IfxFlash_pFlashTablePhys')
+	.sect	'.debug_info'
+.L14:
+	.word	226
+	.half	3
+	.word	.L15
+	.byte	4,1
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\_Impl\\IfxFlash_cfg.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\Debug\\',0,12,1,2
+	.word	.L2
+	.byte	3
+	.byte	'IfxFlash_pFlashTablePhys',0,2,107,28
+	.word	.L20
+	.byte	1,5,3
+	.word	IfxFlash_pFlashTablePhys
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('IfxFlash_pFlashTablePhys')
+	.sect	'.debug_abbrev'
+.L15:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	     1  /**
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	     2   * \file IfxFlash_cfg.c
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	     3   * \brief Flash on-chip implementation data
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	     4   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	     5   * \version iLLD_1_0_0_11_0
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	     6   * \copyright Copyright (c) 2013 Infineon Technologies AG. All rights reserved.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	     7   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	     8   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	     9   *                                 IMPORTANT NOTICE
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    10   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    11   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    12   * Infineon Technologies AG (Infineon) is supplying this file for use
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    13   * exclusively with Infineon's microcontroller products. This file can be freely
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    14   * distributed within development tools that are supporting such microcontroller
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    15   * products.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    16   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    17   * THIS SOFTWARE IS PROVIDED "AS IS".  NO WARRANTIES, WHETHER EXPRESS, IMPLIED
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    18   * OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    19   * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    20   * INFINEON SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL,
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    21   * OR CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    22   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    23   */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    24  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    25  /******************************************************************************/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    26  /*----------------------------------Includes----------------------------------*/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    27  /******************************************************************************/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    28  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    29  #include "IfxFlash_cfg.h"
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    30  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    31  /******************************************************************************/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    32  /*-----------------------Exported Variables/Constants-------------------------*/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    33  /******************************************************************************/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    34  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    35  const IfxFlash_flashSector IfxFlash_dFlashTableEepLog[IFXFLASH_DFLASH_NUM_LOG_SECTORS] = {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    36      {0xAF000000 + 0 * 0x2000,  0xAF000000 + 1 * 0x2000 - 1 },
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    37      {0xAF000000 + 1 * 0x2000,  0xAF000000 + 2 * 0x2000 - 1 },
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    38      {0xAF000000 + 2 * 0x2000,  0xAF000000 + 3 * 0x2000 - 1 },
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    39      {0xAF000000 + 3 * 0x2000,  0xAF000000 + 4 * 0x2000 - 1 },
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    40      {0xAF000000 + 4 * 0x2000,  0xAF000000 + 5 * 0x2000 - 1 },
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    41      {0xAF000000 + 5 * 0x2000,  0xAF000000 + 6 * 0x2000 - 1 },
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    42      {0xAF000000 + 6 * 0x2000,  0xAF000000 + 7 * 0x2000 - 1 },
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    43      {0xAF000000 + 7 * 0x2000,  0xAF000000 + 8 * 0x2000 - 1 },
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    44      {0xAF000000 + 8 * 0x2000,  0xAF000000 + 9 * 0x2000 - 1 },
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    45      {0xAF000000 + 9 * 0x2000,  0xAF000000 + 10 * 0x2000 - 1},
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    46      {0xAF000000 + 10 * 0x2000, 0xAF000000 + 11 * 0x2000 - 1},
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    47      {0xAF000000 + 11 * 0x2000, 0xAF000000 + 12 * 0x2000 - 1},
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    48      {0xAF000000 + 12 * 0x2000, 0xAF000000 + 13 * 0x2000 - 1},
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    49      {0xAF000000 + 13 * 0x2000, 0xAF000000 + 14 * 0x2000 - 1},
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    50      {0xAF000000 + 14 * 0x2000, 0xAF000000 + 15 * 0x2000 - 1},
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    51      {0xAF000000 + 15 * 0x2000, 0xAF000000 + 16 * 0x2000 - 1},
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    52  };
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    53  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    54  const IfxFlash_flashSector IfxFlash_dFlashTablePhys[IFXFLASH_DFLASH_NUM_PHYSICAL_SECTORS] = {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    55      {IFXFLASH_DFLASH_START, IFXFLASH_DFLASH_END},
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    56  };
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    57  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    58  const IfxFlash_flashSector IfxFlash_dFlashTableUcbLog[IFXFLASH_DFLASH_NUM_UCB_LOG_SECTORS] = {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    59      {0xaf100000, 0xaf1003ff},   // UCB0
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    60      {0xaf100400, 0xaf1007ff},   // UCB1
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    61      {0xaf100800, 0xaf100bff},   // UCB2
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    62      {0xaf100c00, 0xaf100fff},   // UCB3
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    63      {0xaf101000, 0xaf1013ff},   // UCB4
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    64      {0xaf101400, 0xaf1017ff},   // UCB5
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    65      {0xaf101800, 0xaf101bff},   // UCB6
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    66      {0xaf101c00, 0xaf101fff},   // UCB7
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    67      {0xaf102000, 0xaf1023ff},   // UCB8
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    68      {0xaf102400, 0xaf1027ff},   // UCB9
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    69      {0xaf102800, 0xaf102bff},   // UCB10
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    70      {0xaf102c00, 0xaf102fff},   // UCB11
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    71      {0xaf103000, 0xaf1033ff},   // UCB12
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    72      {0xaf103400, 0xaf1037ff},   // UCB13
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    73      {0xaf103800, 0xaf103bff},   // UCB14
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    74      {0xaf103c00, 0xaf103fff},   // UCB15
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    75  };
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    76  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    77  const IfxFlash_flashSector IfxFlash_pFlashTableLog[IFXFLASH_PFLASH_NUM_LOG_SECTORS] = {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    78      {0xa0000000, 0xa0003fff},   // PF0 S0
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    79      {0xa0004000, 0xa0007fff},   // PF0 S1
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    80      {0xa0008000, 0xa000bfff},   // PF0 S2
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    81      {0xa000c000, 0xa000ffff},   // PF0 S3
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    82      {0xa0010000, 0xa0013fff},   // PF0 S4
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    83      {0xa0014000, 0xa0017fff},   // PF0 S5
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    84      {0xa0018000, 0xa001bfff},   // PF0 S6
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    85      {0xa001c000, 0xa001ffff},   // PF0 S7
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    86      {0xa0020000, 0xa0027fff},   // PF0 S8
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    87      {0xa0028000, 0xa002ffff},   // PF0 S9
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    88      {0xa0030000, 0xa0037fff},   // PF0 S10
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    89      {0xa0038000, 0xa003ffff},   // PF0 S11
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    90      {0xa0040000, 0xa0047fff},   // PF0 S12
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    91      {0xa0048000, 0xa004ffff},   // PF0 S13
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    92      {0xa0050000, 0xa0057fff},   // PF0 S14
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    93      {0xa0058000, 0xa005ffff},   // PF0 S15
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    94      {0xa0060000, 0xa006ffff},   // PF0 S16
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    95      {0xa0070000, 0xa007ffff},   // PF0 S17
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    96      {0xa0080000, 0xa008ffff},   // PF0 S18
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    97      {0xa0090000, 0xa009ffff},   // PF0 S19
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    98      {0xa00a0000, 0xa00bffff},   // PF0 S20
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	    99      {0xa00c0000, 0xa00dffff},   // PF0 S21
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	   100      {0xa00e0000, 0xa00fffff},   // PF0 S22
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	   101      {0xa0100000, 0xa013ffff},   // PF0 S23
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	   102      {0xa0140000, 0xa017ffff},   // PF0 S24
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	   103      {0xa0180000, 0xa01bffff},   // PF0 S25
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	   104      {0xa01c0000, 0xa01fffff},   // PF0 S26
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	   105  };
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	   106  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	   107  const IfxFlash_flashSector IfxFlash_pFlashTablePhys[IFXFLASH_PFLASH_NUM_PHYSICAL_SECTORS] = {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	   108      {0xa0000000, 0xa007ffff},   // PF0 PS0
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	   109      {0xa0080000, 0xa00fffff},   // PF0 PS1
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	   110      {0xa0100000, 0xa017ffff},   // PF0 PS2
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	   111      {0xa0180000, 0xa01fffff},   // PF0 PS3
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\_Impl\IfxFlash_cfg.c	   112  };
+
+	; Module end

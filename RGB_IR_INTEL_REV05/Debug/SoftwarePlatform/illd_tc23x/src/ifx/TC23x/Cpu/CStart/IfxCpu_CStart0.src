@@ -1,0 +1,330 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 07918494"
+	.compiler_invocation	"ctc -f cc16692a --dep-file=SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\Cpu\\CStart\\.IfxCpu_CStart0.o.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc23x -D__CPU_TC23X__ --core=tc1.6.x --fp-model=+float -DNDEBUG -D__SWPLATFORM__ -DIFX_CFG_USE_COMPILER_DEFAULT_LINKER -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05 -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\APP\\inc -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_common/ifx_cfg/include -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/Configuration -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/Scu/Std/InitApi -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/Stm/Std/InitApi -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_tc23x/src/ifx/TC23x -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_tc23x/src/ifx/TC23x/_Reg -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_tc23x/src/ifx/SrvSw -ID:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05/SoftwarePlatform/illd_common/ifx_cfg/include -g2 --no-warnings=542 --make-target=SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\Cpu\\CStart\\IfxCpu_CStart0.o -t4 --language=-gcc,-volatile,+strings,-kanji --default-near-size=8 -O2 --default-a1-size=0 --default-a0-size=0 --source --align=0 --compact-max-size=200 --switch=auto --error-limit=42 -o SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\Cpu\\CStart\\IfxCpu_CStart0.src ..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\Cpu\\CStart\\IfxCpu_CStart0.c"
+	.compiler_name		"ctc"
+	;source	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\Cpu\\CStart\\IfxCpu_CStart0.c'
+
+	
+$TC16X
+	
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L3:
+	.word	389
+	.half	3
+	.word	.L4
+	.byte	4
+.L2:
+	.byte	1
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\Cpu\\CStart\\IfxCpu_CStart0.c',0
+	.byte	'TASKING VX-toolset for TriCore: C compiler',0
+	.byte	'D:\\00.Tasking_workspace\\DVRS_INTEL\\RGB_IR_INTEL_REV05\\Debug\\',0,12,1
+	.word	.L5
+	.byte	2
+	.byte	'short int',0,2,5,3
+	.byte	'__wchar_t',0,1,1,1
+	.word	195
+	.byte	2
+	.byte	'unsigned int',0,4,7,3
+	.byte	'__size_t',0,1,1,1
+	.word	226
+	.byte	2
+	.byte	'int',0,4,5,3
+	.byte	'__ptrdiff_t',0,1,1,1
+	.word	259
+	.byte	4,1,5
+	.word	286
+	.byte	3
+	.byte	'__codeptr',0,1,1,1
+	.word	288
+	.byte	3
+	.byte	'__intptr_t',0,1,1,1
+	.word	259
+	.byte	3
+	.byte	'__uintptr_t',0,1,1,1
+	.word	226
+	.byte	2
+	.byte	'unsigned short int',0,2,7,3
+	.byte	'_iob_flag_t',0,2,82,25
+	.word	350
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L4:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,22,0,3,8,58,15,59,15,57,15
+	.byte	73,19,0,0,4,21,0,54,15,0,0,5,15,0,73,19,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L5:
+	.word	.L7-.L6
+.L6:
+	.half	3
+	.word	.L9-.L8
+.L8:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'C:\\TASKING\\TriCore v6.2r2\\ctc\\include\\',0,0
+	.byte	'..\\SoftwarePlatform\\illd_tc23x\\src\\ifx\\TC23x\\Cpu\\CStart\\IfxCpu_CStart0.c',0,0,0,0
+	.byte	'stdio.h',0,1,0,0,0
+.L9:
+.L7:
+
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	     1  /**
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	     2   * \file IfxCpu_Cstart0.c
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	     3   * \brief This file contains the Core startup sequence for Cpu0.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	     4   * \version iLLD_1_0_0_11_0
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	     5   * \copyright Copyright (c) 2012 Infineon Technologies AG. All rights reserved.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	     6   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	     7   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	     8   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	     9   *                                 IMPORTANT NOTICE
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    10   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    11   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    12   * Infineon Technologies AG (Infineon) is supplying this file for use
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    13   * exclusively with Infineon's microcontroller products. This file can be freely
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    14   * distributed within development tools that are supporting such microcontroller
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    15   * products.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    16   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    17   * THIS SOFTWARE IS PROVIDED "AS IS".  NO WARRANTIES, WHETHER EXPRESS, IMPLIED
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    18   * OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    19   * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    20   * INFINEON SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL,
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    21   * OR CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    22   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    23   */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    24  /*******************************************************************************
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    25  **                      Includes                                              **
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    26  *******************************************************************************/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    27  #include "Ifx_Cfg.h"
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    28  #ifndef IFX_CFG_USE_COMPILER_DEFAULT_LINKER
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    29  #include "Scu/Std/IfxScuWdt.h"
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    30  #include "Scu/Std/IfxScuCcu.h"
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    31  #include "Cpu/Std/IfxCpu.h"
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    32  #include "Cpu/CStart/IfxCpu_CStart.h"
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    33  #include "IfxScu_reg.h"
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    34  #include "IfxCpu_reg.h"
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    35  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    36  /******************************************************************************/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    37  /*                           Macros                                           */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    38  /******************************************************************************/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    39  /** \brief Configuration for cache enable.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    40   *
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    41   */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    42  #ifndef IFX_CFG_CPU_CSTART_ENABLE_TRICORE0_PCACHE
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    43  #   define IFX_CFG_CPU_CSTART_ENABLE_TRICORE0_PCACHE (1)  /**< Program Cache enabled by default*/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    44  #endif
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    45  #ifndef IFX_CFG_CPU_CSTART_ENABLE_TRICORE0_DCACHE
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    46  #   define IFX_CFG_CPU_CSTART_ENABLE_TRICORE0_DCACHE (1)  /**< Data Cache enabled by default*/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    47  #endif
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    48  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    49  #ifndef IFXCPU_CSTART_CCU_INIT_HOOK
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    50  #define IFXCPU_CSTART_CCU_INIT_HOOK() (void)IfxScuCcu_init(&IfxScuCcu_defaultClockConfig);   /*The status returned by Ccu init is ignored */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    51  #endif
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    52  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    53  /*******************************************************************************
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    54  **                      Imported Function Declarations                        **
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    55  *******************************************************************************/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    56  IFXCOMPILER_COMMON_LINKER_SYMBOLS()
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    57  IFXCOMPILER_CORE_LINKER_SYMBOLS(0)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    58  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    59  IFX_EXTERN void core0_main(void);
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    60  #if defined(__TASKING__)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    61  __asm("\t .extern core0_main");
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    62  #endif
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    63  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    64  /*******************************************************************************
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    65  **                      Private Constant Definitions                          **
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    66  *******************************************************************************/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    67  #define IFXCSTART0_PSW_DEFAULT     (0x00000980u)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    68  #define IFXCSTART0_PCX_O_S_DEFAULT (0xfff00000u)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    69  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    70  /*********************************************************************************
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    71  * _start() - startup code
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    72  *********************************************************************************/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    73  void _Core0_start(void)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    74  {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    75      uint32 pcxi;
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    76      uint16 cpuWdtPassword = IfxScuWdt_getCpuWatchdogPasswordInline(&MODULE_SCU.WDTCPU[0]);
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    77  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    78      IFX_CFG_CPU_CSTART_PRE_C_INIT_HOOK(0);  /*Test Stack, CSA and Cache */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    79  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    80      /* Load user stack pointer */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    81      __setareg(sp, __USTACK(0));
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    82      __dsync();
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    83  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    84      /* Set the PSW to its reset value in case of a warm start,clear PSW.IS */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    85      __mtcr(CPU_PSW, IFXCSTART0_PSW_DEFAULT);
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    86  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    87      /* Set the PCXS and PCXO to its reset value in case of a warm start */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    88      pcxi  = __mfcr(CPU_PCXI);
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    89      pcxi &= IFXCSTART0_PCX_O_S_DEFAULT; /*0xfff00000; */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    90      __mtcr(CPU_PCXI, pcxi);
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    91  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    92      /*enable/disable program cache depending on the configuration */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    93      IfxCpu_setProgramCache(IFX_CFG_CPU_CSTART_ENABLE_TRICORE0_PCACHE);
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    94  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    95      /*enable/disable data cache depending on the configuration */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    96      IfxCpu_setDataCache(IFX_CFG_CPU_CSTART_ENABLE_TRICORE0_DCACHE);
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    97  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    98      /* Clear the ENDINIT bit in the WDT_CON0 register, inline funtion */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	    99      IfxScuWdt_clearCpuEndinitInline(&MODULE_SCU.WDTCPU[0], cpuWdtPassword);
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   100  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   101      /* Load Base Address of Trap Vector Table. */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   102      __mtcr(CPU_BTV, (uint32)__TRAPTAB(0));
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   103  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   104      /* Load Base Address of Interrupt Vector Table. we will do this later in the program */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   105      __mtcr(CPU_BIV, (uint32)__INTTAB(0));
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   106  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   107      /* Load interupt stack pointer. */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   108      __mtcr(CPU_ISP, (uint32)__ISTACK(0));
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   109  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   110      IfxScuWdt_setCpuEndinitInline(&MODULE_SCU.WDTCPU[0], cpuWdtPassword);
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   111  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   112      /* initialize SDA base pointers */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   113      __setareg(a0, __SDATA1(0));
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   114      __setareg(a1, __SDATA2(0));
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   115  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   116      /* These to be un commented if A8 and A9 are required to be initialized */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   117      __setareg(a8, __SDATA3(0));
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   118      __setareg(a9, __SDATA4(0));
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   119      /* Setup the context save area linked list. */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   120  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   121      IfxCpu_initCSA((uint32 *)__CSA(0), (uint32 *)__CSA_END(0));     /*Initialize the context save area for CPU0 */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   122  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   123      {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   124          /*CPU and safety watchdogs are enabled by default, C initialization functions are not servicing the watchdogs */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   125          uint16 safetyWdtPassword = IfxScuWdt_getSafetyWatchdogPassword();
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   126          IfxScuWdt_disableCpuWatchdog(cpuWdtPassword);
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   127          IfxScuWdt_disableSafetyWatchdog(safetyWdtPassword);
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   128  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   129          Ifx_C_Init();           /*Initialization of C runtime variables */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   130  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   131          IfxScuWdt_enableCpuWatchdog(cpuWdtPassword);
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   132          IfxScuWdt_enableSafetyWatchdog(safetyWdtPassword);
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   133      }
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   134  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   135      /*Initialize the clock system */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   136      IFXCPU_CSTART_CCU_INIT_HOOK();
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   137  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   138      /*Call main function of Cpu0 */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   139      __non_return_call(core0_main);
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   140  }
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   141  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   142  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   143  /******************************************************************************
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   144   * reset vector address, user section to inform linker to locate the code at 0x8000 0020
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   145   *****************************************************************************/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   146  #if defined(__GNUC__)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   147  #pragma section
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   148  #pragma section ".start" x
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   149  #endif
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   150  #if defined(__TASKING__)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   151  #pragma protect on
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   152  #pragma section code "start"
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   153  #endif
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   154  #if defined(__DCC__)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   155  #pragma section CODE ".start" X
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   156  #endif
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   157  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   158  void _START(void)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   159  {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   160      __non_return_call(_Core0_start);
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   161  }
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   162  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   163  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   164  /* reset the sections defined above, to normal region */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   165  #if defined(__GNUC__)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   166  #pragma section
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   167  #endif
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   168  #if defined(__TASKING__)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   169  #pragma protect restore
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   170  #pragma section code restore
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   171  #endif
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   172  #if defined(__DCC__)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   173  #pragma section CODE
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   174  #endif
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   175  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   176  /*******************************************************************************
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   177  **                      Boot Mode Headers                                     **
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   178  *******************************************************************************/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   179  /*Boot Mode Header 0 sections to inform linker to locate them at 0x8000 0000 */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   180  #if defined(__GNUC__)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   181  #pragma section
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   182  #pragma section ".bmhd_0" a
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   183  #endif
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   184  #if defined(__TASKING__)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   185  #pragma protect on
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   186  #pragma section farrom "bmhd_0"
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   187  #endif
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   188  #if defined(__DCC__)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   189  #pragma section CONST ".bmhd_0" R
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   190  #endif
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   191  /** \brief Boot Mode Header 0
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   192   * Boot mode header at memory location 0c8000 0000.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   193   */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   194  const uint32 BootModeHeader_0[] = {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   195      0x00000000u,                 /* STADBM first user code at 0x8000 0020h */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   196      0xb3590070u,                 /* BMI = 0070h BMHDID = B359h */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   197      0x00000000u,                 /* ChkStart */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   198      0x00000000u,                 /* ChkEnd */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   199      0x00000000u,                 /* CRCrange */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   200      0x00000000u,                 /* !CRCrange */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   201      0x791eb864u,                 /* CRChead */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   202      0x86e1479bu                  /* !CRChead */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   203  };
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   204  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   205  /*reset the sections defined above */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   206  #if defined(__GNUC__)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   207  #pragma section
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   208  #endif
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   209  #if defined(__TASKING__)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   210  #pragma protect restore
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   211  #pragma section farrom restore
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   212  #endif
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   213  #if defined(__DCC__)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   214  #pragma section CONST
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   215  #endif
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   216  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   217  #ifndef IFX_CFG_CPUCSTART_BMI01_NOT_NEEDED
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   218  /*Boot Mode Header 1 sections to inform linker to locate them at 0x8002 0000 */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   219  #if defined(__GNUC__)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   220  #pragma section
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   221  #pragma section ".bmhd_1" a
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   222  #endif
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   223  #if defined(__TASKING__)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   224  #pragma protect on
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   225  #pragma section farrom "bmhd_1"
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   226  #endif
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   227  #if defined(__DCC__)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   228  #pragma section CONST ".bmhd_1" R
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   229  #endif
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   230  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   231  /** \brief Boot Mode Header 1
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   232   * Boot mode header at memory location 0c8002 0000.
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   233   */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   234  const uint32 BootModeHeader_1[] = {
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   235      0x00000000u,                 /* STADBM first user code at 0x8000 0020h */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   236      0xB3590070u,                 /* BMI = 0070h BMHDID = B359h */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   237      0x00000000u,                 /* ChkStart */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   238      0x00000000u,                 /* ChkEnd */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   239      0x00000000u,                 /* CRCrange */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   240      0x00000000u,                 /* !CRCrange */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   241      0x791eb864u,                 /* CRChead */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   242      0x86e1479bu                  /* !CRChead */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   243  };
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   244  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   245  /*reset the sections defined above */
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   246  #if defined(__GNUC__)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   247  #pragma section
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   248  #endif
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   249  #if defined(__TASKING__)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   250  #pragma protect restore
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   251  #pragma section farrom restore
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   252  #endif
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   253  #if defined(__DCC__)
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   254  #pragma section CONST
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   255  #endif
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   256  #endif /*IFX_CFG_CPUCSTART_BMI01_NOT_NEEDED*/
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   257  
+; ..\SoftwarePlatform\illd_tc23x\src\ifx\TC23x\Cpu\CStart\IfxCpu_CStart0.c	   258  #endif /*#ifndef IFX_CFG_USE_COMPILER_DEFAULT_LINKER */
+
+	; Module end

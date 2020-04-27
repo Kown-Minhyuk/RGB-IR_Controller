@@ -1,0 +1,34 @@
+/*
+ *  Software Platform Generated File
+ *  --------------------------------
+ */
+
+#ifndef _SWP_IFXQSPI_CFG_INSTANCE_H
+#define _SWP_IFXQSPI_CFG_INSTANCE_H
+
+#include "IfxQspi_cfg.h"
+
+
+#define IFXQSPI_INSTANCE_MODULE_QSPI0  &MODULE_QSPI0
+#define IFXQSPI_INSTANCE_MODULE_QSPI1  &MODULE_QSPI1
+#define IFXQSPI_INSTANCE_MODULE_QSPI2  &MODULE_QSPI2
+#define IFXQSPI_INSTANCE_MODULE_QSPI3  &MODULE_QSPI3
+
+#define IFXQSPI_INSTANCE_MODULE_QSPI0_USED  0
+#define IFXQSPI_INSTANCE_MODULE_QSPI1_USED  1
+#define IFXQSPI_INSTANCE_MODULE_QSPI2_USED  0
+#define IFXQSPI_INSTANCE_MODULE_QSPI3_USED  0
+#define IFXQSPI_INSTANCE_MODULE_OPTIONS_USED  1
+#define IFXQSPI_INSTANCE_MODULE_MIN  IFXQSPI_INSTANCE_MODULE_QSPI1
+#define IFXQSPI_INSTANCE_MODULE_MAX  IFXQSPI_INSTANCE_MODULE_QSPI1
+
+
+// instance data
+typedef struct
+{
+    int instance_id;
+} IfxQspi_cfg_instance_t;
+
+extern const IfxQspi_cfg_instance_t IfxQspi_instance_table[]; 
+
+#endif /* _SWP_IFXQSPI_CFG_INSTANCE_H */

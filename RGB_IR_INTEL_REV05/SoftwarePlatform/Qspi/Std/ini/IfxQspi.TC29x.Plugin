@@ -1,0 +1,74 @@
+;                                IMPORTANT NOTICE
+;
+; Infineon Technologies AG (Infineon) is supplying this file for use
+; exclusively with Infineon's microcontroller products. This file can be freely
+; distributed within development tools that are supporting such microcontroller
+; products.
+;
+; THIS SOFTWARE IS PROVIDED "AS IS".  NO WARRANTIES, WHETHER EXPRESS, IMPLIED
+; OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF
+; MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE.
+; INFINEON SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL,
+; OR CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER.
+
+
+[Available_If0]
+Kind=ENVIRONMENT
+Name=DEVICE
+Value=TC29X
+Condition=REQ
+
+[Plugin]
+Name=IfxQspi_TC29X
+Implement=IfxQspi
+NameSpacePrefix=IfxQspi
+
+Caption=Qspi Peripheral
+Description=Qspi Peripheral
+UserTypeHeaderFile=Qspi/Std/IfxQspi.h
+
+; instances
+
+Instance0=IFX_QSPI0
+Instance1=IFX_QSPI1
+Instance2=IFX_QSPI2
+Instance3=IFX_QSPI3
+Instance4=IFX_QSPI4
+Instance5=IFX_QSPI5
+
+[Instance]
+; field needed to make sure section is not empty
+Require0=
+
+[Instance_Option0]
+Name=Module
+Caption=Module Instance
+Description=QSPI Module Instance
+Type=Ifx_QSPI*
+Kind=ENUM
+
+EnumValue0=&MODULE_QSPI0
+EnumValue1=&MODULE_QSPI1
+EnumValue2=&MODULE_QSPI2
+EnumValue3=&MODULE_QSPI3
+EnumValue4=&MODULE_QSPI4
+EnumValue5=&MODULE_QSPI5
+Enum0=QSPI0
+Enum1=QSPI1
+Enum2=QSPI2
+Enum3=QSPI3
+Enum4=QSPI4
+Enum5=QSPI5
+Instance0_DefaultValue=QSPI0
+Instance1_DefaultValue=QSPI1
+Instance2_DefaultValue=QSPI2
+Instance3_DefaultValue=QSPI3
+Instance4_DefaultValue=QSPI4
+Instance5_DefaultValue=QSPI5
+
+; no code generation, this option value is used from the driver plugin
+NoGenerate=true
+
+; always hide module option
+[Instance_Option0_Hide_If0]
+Kind=True

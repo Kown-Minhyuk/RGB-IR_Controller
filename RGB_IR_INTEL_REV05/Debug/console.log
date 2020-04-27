@@ -1,0 +1,33 @@
+
+**** Build of configuration Debug for project RGB_IR_INTEL_REV05 ****
+
+"C:\\TASKING\\TriCore v6.2r2\\ctc\\bin\\amk" -j8 all 
+Compiling Gtm.c
+Compiling Power_mode.c
+Compiling sched.c
+Compiling Spisoc.c
+ctc W757: ["D:\00.Tasking_workspace\DVRS_INTEL\RGB_IR_INTEL_REV05\APP\inc\Spisoc.h" 27/22] bad symbol attribute __align for object "spi_data_tx" -- ignored
+ctc W757: ["D:\00.Tasking_workspace\DVRS_INTEL\RGB_IR_INTEL_REV05\APP\inc\Spisoc.h" 28/22] bad symbol attribute __align for object "spi_data_rx" -- ignored
+0 errors, 2 warnings
+ctc W757: ["D:\00.Tasking_workspace\DVRS_INTEL\RGB_IR_INTEL_REV05\APP\inc\Spisoc.h" 27/22] bad symbol attribute __align for object "spi_data_tx" -- ignored
+ctc W757: ["D:\00.Tasking_workspace\DVRS_INTEL\RGB_IR_INTEL_REV05\APP\inc\Spisoc.h" 28/22] bad symbol attribute __align for object "spi_data_rx" -- ignored
+ctc W505: ["..\APP\src\sched.c" 78/2] implicit declaration of function "spi_put_msg"
+ctc W577: ["..\APP\src\sched.c" 78/13] calling a function without a prototype
+ctc W505: ["..\APP\src\sched.c" 79/2] implicit declaration of function "Qspi_Dma_transfer"
+ctc W577: ["..\APP\src\sched.c" 79/19] calling a function without a prototype
+0 errors, 6 warnings
+ctc W757: ["D:\00.Tasking_workspace\DVRS_INTEL\RGB_IR_INTEL_REV05\APP\inc\Spisoc.h" 27/22] bad symbol attribute __align for object "spi_data_tx" -- ignored
+ctc W757: ["D:\00.Tasking_workspace\DVRS_INTEL\RGB_IR_INTEL_REV05\APP\inc\Spisoc.h" 28/22] bad symbol attribute __align for object "spi_data_rx" -- ignored
+ctc W588: ["..\APP\src\Spisoc.c" 71/16] dead assignment to "sample_time" eliminated
+0 errors, 3 warnings
+Linking to RGB_IR_INTEL_REV05.elf
+
+Time consumed: 6064 ms
+**** End of build ****
+
+Tool info: 
+TASKING VX-toolset for TriCore: object link v6.2r2 Build 18041957 SN 07918494
+TASKING VX-toolset for TriCore: assembler v6.2r2 Build 18041957
+TASKING program builder v6.2r2 Build 18041957
+TASKING VX-toolset for TriCore: control program v6.2r2 Build 18041957
+TASKING VX-toolset for TriCore: C compiler v6.2r2 Build 18041957 SN 07918494

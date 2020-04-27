@@ -1,0 +1,54 @@
+;                                IMPORTANT NOTICE
+;
+; Infineon Technologies AG (Infineon) is supplying this file for use
+; exclusively with Infineon's microcontroller products. This file can be freely
+; distributed within development tools that are supporting such microcontroller
+; products.
+;
+; THIS SOFTWARE IS PROVIDED "AS IS".  NO WARRANTIES, WHETHER EXPRESS, IMPLIED
+; OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF
+; MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE.
+; INFINEON SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL,
+; OR CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER.
+
+
+[Available_If0]
+Kind=ENVIRONMENT
+Name=DEVICE
+Value=TC22X
+Condition=REQ
+
+[Plugin]
+Name=IfxVadc_TC22X
+Implement=IfxVadc
+NameSpacePrefix=IfxVadc
+
+Caption=Vadc Peripheral
+Description=Vadc Peripheral
+UserTypeHeaderFile=Vadc/Std/IfxVadc.h
+
+; instances
+
+Instance0=IFX_VADC0
+
+[Instance]
+; field needed to make sure section is not empty
+Require0=
+
+[Instance_Option0]
+Name=Module
+Caption=Module Instance
+Description=VADC Module Instance
+Type=Ifx_VADC*
+Kind=ENUM
+
+EnumValue0=&MODULE_VADC
+Enum0=VADC0
+Instance0_DefaultValue=VADC0
+
+; no code generation, this option value is used from the driver plugin
+NoGenerate=true
+
+; always hide module option
+[Instance_Option0_Hide_If0]
+Kind=True
